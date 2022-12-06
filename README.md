@@ -9,13 +9,14 @@
 <img src="https://img.shields.io/github/forks/jaenfigueroa/eCommerce">
 <img src="https://img.shields.io/github/issues-pr/jaenfigueroa/eCommerce">
 <img src="https://img.shields.io/github/issues/jaenfigueroa/eCommerce">
+
 </div>
 
 ## 💡 Brief
 
 In this project, we're creating an eCommerce component.
 
-<img src="./assets/preview.gif" align="center" style="width: 100%"  />
+<img src="./assets/preview.png" align="center" style="width: 100%"  />
 
 ## 📌 Users should be able to:
 
