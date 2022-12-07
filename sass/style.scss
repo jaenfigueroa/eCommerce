@@ -1,17 +1,14 @@
 /* 
-# FONTS
-
-- Poppins (400 and 700) - https://fonts.google.com/specimen/Poppins
-
 # COLORS
 
-- background color: #EFF0F6
 - border color: #d7d6fc
-- primary purple: #6B00F5
+
 - Pattens Blue: #e1f0fe
 - Ghost White: #f7f7ff
 - White Ice: #defef0
 
+- background color: #EFF0F6
+- primary purple: #6B00F5
 */
 
 * {
@@ -52,8 +49,7 @@ body {
 
     // border: 2px solid black;
     box-shadow: 0 0 20px 0px #e2e7ff;
-    box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.3);
-    border-radius: 2rem;
+    box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.2);
     overflow: hidden;
 
     // min-height: 600px;
@@ -326,6 +322,15 @@ body {
   }
 }
 
+@media (min-width: 400px) {
+  .main {
+    padding: 5rem 0; /* provisional */
+  }
+
+  .seccion {
+    border-radius: 2rem;
+  }
+}
 /* FOOTER///////////////////// */
 .footer {
   // background-color: rgb(195, 195, 195);
