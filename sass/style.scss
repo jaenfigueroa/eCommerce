@@ -47,13 +47,16 @@ body {
     // background-color: greenyellow;
     background-color: white;
     width: 100%;
-    min-height: 600px;
     max-width: 480px;
+    max-width: 380px;
 
     // border: 2px solid black;
     box-shadow: 0 0 15px 0px #cfd4f0;
     border-radius: 2rem;
     overflow: hidden;
+
+    // min-height: 600px;
+    height: max-content;
 
     &__header {
       // background-color: yellow;
@@ -67,8 +70,7 @@ body {
     // background-color: red;
     display: flex;
     flex-direction: column;
-    padding-bottom: 1.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
 
     &__contenedor-platos {
       display: flex;
@@ -143,73 +145,95 @@ body {
   }
 
   .seccion2 {
-    // background-color: blue;
+    background-color: rgb(187, 0, 255);
 
     .contenedor-elementos {
-      // background-color: green;
+      background-color: rgb(78, 207, 78);
       width: 100%;
       min-height: 400px;
       display: flex;
       flex-direction: column;
       // gap: 1.5rem;
-      padding: 0 3rem;
+      padding: 0 2rem;
 
       .elemento {
-        // background-color: aqua;
+        background-color: rgb(186, 255, 255);
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding: 2rem 0 0 0;
         gap: 2rem;
         border-bottom: 2px solid #d7d7f9;
+        border-bottom: 2px solid black;
 
         &__imagen {
-          width: 150px;
-          height: 150px;
-          // background-color: gray;
+          width: 80px;
+          height: 80px;
+          background-color: gray;
           transform: translate(0, -10px);
           background-image: url(../img/assets/platos/plate__fish-sticks-fries.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
           transform: translate(0px, -10px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &__numero {
+            background-color: black;
+            width: 35px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+              font-size: 1.8rem;
+              font-weight: 600;
+              color: white;
+            }
+          }
         }
 
-        div {
-          // background-color: chocolate;
+        &__contenedor {
+          background-color: rgb(255, 198, 157);
           display: flex;
           flex-direction: column;
-          gap: 2rem;
+          gap: 1.5rem;
           width: 250px;
 
-          .header {
-            // background-color: yellow;
+          .elemento__header {
+            background-color: yellow;
             display: flex;
             flex-direction: column;
+            border: 1px solid black;
 
             .nombre {
-              // background-color: rgb(37, 37, 186);
+              background-color: rgb(145, 145, 255);
               font-weight: 400;
             }
             .precio-unitario {
-              // background-color: rgb(88, 161, 31);
+              background-color: rgb(173, 255, 111);
               font-weight: 700;
               font-size: 1.8rem;
             }
           }
 
-          .main {
+          .elemento__main {
             display: flex;
             flex-direction: row;
-            // background-color: #6b00f5;
             background-color: transparent;
             justify-content: space-between;
+            border: 1px solid black;
+            background-color: #00e1f5;
 
-            &__nav {
-              // background-color: rgb(232, 80, 255);
+            .main__nav {
+              background-color: rgb(238, 127, 255);
               display: flex;
               align-items: center;
-              gap: 2rem;
+              gap: 1.5rem;
               width: max-content;
 
               button {
@@ -226,8 +250,8 @@ body {
               }
             }
 
-            &__precio {
-              // background-color: yellow;
+            .main__precio {
+              background-color: yellow;
               font-size: 3rem;
               font-weight: 700;
               width: max-content;
@@ -237,11 +261,13 @@ body {
 
         &:last-child {
           border-bottom: 6px solid #d7d7f9;
+          border-bottom: 6px solid black;
         }
       }
     }
     .contenedor-resultados {
-      // background-color: pink;
+      border: 1px solid black;
+      background-color: rgb(255, 192, 255);
       width: 100%;
       padding: 2rem;
       display: flex;
@@ -250,9 +276,11 @@ body {
       align-items: flex-end;
 
       div {
-        background-color: blue;
+        background-color: yellow;
+        width: 100%;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        flex: 1 1;
 
         span {
           color: red;

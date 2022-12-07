@@ -46,11 +46,12 @@ body {
 .main .seccion {
   background-color: white;
   width: 100%;
-  min-height: 600px;
   max-width: 480px;
+  max-width: 380px;
   box-shadow: 0 0 15px 0px #cfd4f0;
   border-radius: 2rem;
   overflow: hidden;
+  height: max-content;
 }
 .main .seccion__header {
   font-size: 3rem;
@@ -60,8 +61,7 @@ body {
 .main .seccion1 {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
 }
 .main .seccion1__contenedor-platos {
   display: flex;
@@ -120,61 +120,93 @@ body {
 .main .seccion1__contenedor-platos .plato__boton:hover {
   background-color: #5900ce;
 }
+.main .seccion2 {
+  background-color: rgb(187, 0, 255);
+}
 .main .seccion2 .contenedor-elementos {
+  background-color: rgb(78, 207, 78);
   width: 100%;
   min-height: 400px;
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 .main .seccion2 .contenedor-elementos .elemento {
+  background-color: rgb(186, 255, 255);
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 2rem 0 0 0;
   gap: 2rem;
   border-bottom: 2px solid #d7d7f9;
+  border-bottom: 2px solid black;
 }
 .main .seccion2 .contenedor-elementos .elemento__imagen {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
+  background-color: gray;
   transform: translate(0, -10px);
   background-image: url(../img/assets/platos/plate__fish-sticks-fries.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   transform: translate(0px, -10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.main .seccion2 .contenedor-elementos .elemento div {
+.main .seccion2 .contenedor-elementos .elemento__imagen__numero {
+  background-color: black;
+  width: 35px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .seccion2 .contenedor-elementos .elemento__imagen__numero span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+.main .seccion2 .contenedor-elementos .elemento__contenedor {
+  background-color: rgb(255, 198, 157);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   width: 250px;
 }
-.main .seccion2 .contenedor-elementos .elemento div .header {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header {
+  background-color: yellow;
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
 }
-.main .seccion2 .contenedor-elementos .elemento div .header .nombre {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header .nombre {
+  background-color: rgb(145, 145, 255);
   font-weight: 400;
 }
-.main .seccion2 .contenedor-elementos .elemento div .header .precio-unitario {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header .precio-unitario {
+  background-color: rgb(173, 255, 111);
   font-weight: 700;
   font-size: 1.8rem;
 }
-.main .seccion2 .contenedor-elementos .elemento div .main {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main {
   display: flex;
   flex-direction: row;
   background-color: transparent;
   justify-content: space-between;
+  border: 1px solid black;
+  background-color: #00e1f5;
 }
-.main .seccion2 .contenedor-elementos .elemento div .main__nav {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav {
+  background-color: rgb(238, 127, 255);
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   width: max-content;
 }
-.main .seccion2 .contenedor-elementos .elemento div .main__nav button {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -182,18 +214,22 @@ body {
   background-color: #6b00f5;
   color: white;
 }
-.main .seccion2 .contenedor-elementos .elemento div .main__nav span {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav span {
   font-weight: bold;
 }
-.main .seccion2 .contenedor-elementos .elemento div .main__precio {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__precio {
+  background-color: yellow;
   font-size: 3rem;
   font-weight: 700;
   width: max-content;
 }
 .main .seccion2 .contenedor-elementos .elemento:last-child {
   border-bottom: 6px solid #d7d7f9;
+  border-bottom: 6px solid black;
 }
 .main .seccion2 .contenedor-resultados {
+  border: 1px solid black;
+  background-color: rgb(255, 192, 255);
   width: 100%;
   padding: 2rem;
   display: flex;
@@ -202,9 +238,11 @@ body {
   align-items: flex-end;
 }
 .main .seccion2 .contenedor-resultados div {
-  background-color: blue;
+  background-color: yellow;
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  flex: 1 1;
 }
 .main .seccion2 .contenedor-resultados div span {
   color: red;
