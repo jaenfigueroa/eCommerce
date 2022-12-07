@@ -125,17 +125,16 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
-  transform: translateY(-30px);
+  padding: 0 2.5rem;
+  transform: translateY(-35px);
 }
 .main .seccion2 .contenedor-elementos .elemento {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 0 0;
   gap: 2rem;
   border-bottom: 2px solid #d7d7f9;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 }
 .main .seccion2 .contenedor-elementos .elemento__imagen {
   width: 80px;
@@ -167,7 +166,7 @@ body {
 .main .seccion2 .contenedor-elementos .elemento__contenedor {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 250px;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header {
@@ -191,19 +190,29 @@ body {
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.7rem;
   width: max-content;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   border: none;
   background-color: #6b00f5;
   color: white;
+  background-image: url(../img/assets/icons/chevron.svg);
+  background-position: 10.5px;
+  background-repeat: no-repeat;
+}
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:last-child {
+  transform: rotateZ(180deg);
+}
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:hover {
+  background-color: #620dd0;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav span {
   font-weight: bold;
+  font-size: 1.8rem;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__precio {
   font-size: 3rem;

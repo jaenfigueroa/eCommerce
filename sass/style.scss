@@ -154,19 +154,19 @@ body {
       width: 100%;
       display: flex;
       flex-direction: column;
-      padding: 0 2rem;
-      transform: translateY(-30px);
+      padding: 0 2.5rem;
+      transform: translateY(-35px);
 
       .elemento {
         // background-color: rgb(186, 255, 255);
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0 0 0;
         gap: 2rem;
         border-bottom: 2px solid #d7d7f9;
         // border-bottom: 2px solid black;
-        padding-bottom: 3rem;
+
+        padding: 3rem 0;
 
         &__imagen {
           width: 80px;
@@ -203,7 +203,7 @@ body {
           // background-color: rgb(255, 198, 157);
           display: flex;
           flex-direction: column;
-          gap: 1.5rem;
+          gap: 1rem;
           width: 250px;
 
           .elemento__header {
@@ -236,20 +236,33 @@ body {
               // background-color: rgb(238, 127, 255);
               display: flex;
               align-items: center;
-              gap: 1.5rem;
+              gap: 1.7rem;
               width: max-content;
 
               button {
-                width: 40px;
-                height: 40px;
+                width: 35px;
+                height: 35px;
                 border-radius: 50%;
                 border: none;
                 background-color: #6b00f5;
                 color: white;
+                background-image: url(../img/assets/icons/chevron.svg);
+                background-position: 10.5px;
+                background-repeat: no-repeat;
+
+                &:last-child {
+                  // background-color: red;
+                  transform: rotateZ(180deg);
+                }
+
+                &:hover {
+                  background-color: #620dd0;
+                }
               }
 
               span {
                 font-weight: bold;
+                font-size: 1.8rem;
               }
             }
 
