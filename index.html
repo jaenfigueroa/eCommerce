@@ -12,11 +12,142 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- js -->
     <script src="main.js" defer></script>
+    <!-- fuentes de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
   </head>
 
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+      <!-- lista de todos los platos -->
+      <section class="seccion seccion1">
+        <!-- header -->
+        <header  class="seccion__header">To Go Menu</header>
+        <!-- contenedor-platos -->
+        <section class="seccion1__contenedor-platos">
+          <!--  -->
+          <article class="plato">
+            <picture class="plato__imagen"></picture>
+            <div class="plato__contenedor">
+              <h3 class="plato__nombre">French Fries with Ketchup</h3>
+              <p class="plato__precio">$2.23</p>
+              <button class="plato__boton">add to cart</button>
+            </div>
+          </article>
+          <!--  -->
+          <article class="plato">
+            <picture class="plato__imagen"></picture>
+            <div class="plato__contenedor">
+              <h3 class="plato__nombre">Salmon and Vegetables</h3>
+              <p class="plato__precio">$5.12</p>
+              <button class="plato__boton">add to cart</button>
+            </div>
+          </article>
+          <!--  -->
+          <article class="plato">
+            <picture class="plato__imagen"></picture>
+            <div class="plato__contenedor">
+              <h3 class="plato__nombre">Salmon and Vegetables</h3>
+              <p class="plato__precio">$7.82</p>
+              <button class="plato__boton">add to cart</button>
+            </div>
+          </article>
+          <!--  -->
+        </section>
+      </section>
+      <!-- carrito con los platos -->
+      <section class="seccion seccion2">
+        <!-- header -->
+        <header class="seccion__header">You Cart</header>
+        <!-- contenedor elementos -->
+        <div class="contenedor-elementos">
+          <!--  -->
+          <article class="elemento">
+            <picture class="elemento__imagen"></picture>
+            <div>
+              <!-- header -->
+              <header class="header">
+                <h4 class="nombre">
+                  French Fries with Ketchup
+                </h4>
+                <p class="precio-unitario">$2.24</p>
+              </header>
+              <!-- main -->
+              <main class="main">
+                <nav class="main__nav">
+                  <button><</button>
+                  <span>2</span>
+                  <button>></button>
+                </nav>
+                <p class="main__precio">$4.46</p>
+              </main>
+            </div>
+          </article>
+          <!--  -->
+          <article class="elemento">
+            <picture class="elemento__imagen"></picture>
+            <div>
+              <!-- header -->
+              <header class="header">
+                <h4 class="nombre">
+                  French Fries with Ketchup
+                </h4>
+                <p class="precio-unitario">$2.24</p>
+              </header>
+              <!-- main -->
+              <main class="main">
+                <nav class="main__nav">
+                  <button><</button>
+                  <span>2</span>
+                  <button>></button>
+                </nav>
+                <p class="main__precio">$4.46</p>
+              </main>
+            </div>
+          </article>
+          <!--  -->
+          <article class="elemento">
+            <picture class="elemento__imagen"></picture>
+            <div>
+              <!-- header -->
+              <header class="header">
+                <h4 class="nombre">
+                  French Fries with Ketchup
+                </h4>
+                <p class="precio-unitario">$2.24</p>
+              </header>
+              <!-- main -->
+              <main class="main">
+                <nav class="main__nav">
+                  <button><</button>
+                  <span>2</span>
+                  <button>></button>
+                </nav>
+                <p class="main__precio">$4.46</p>
+              </main>
+            </div>
+          </article>
+          <!--  -->
+        </div>
+        <div class="contenedor-resultados">
+          <div>
+            <span>Subtotal</span>
+            <p>$20.10</p>
+          </div>
+          <div>
+            <span>Tax</span>
+            <p>$1.96</p>
+          </div>
+          <div>
+            <span>Total</span>
+            <p>$30.12</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><p>Desarrollado por <a href="https://github.com/jaenfigueroa/eCommerce">Jaen Figueroa</a> &#169 2022</p></footer>
   </body>
 </html>
