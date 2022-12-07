@@ -32,47 +32,48 @@ ol {
 
 /* MAIN///////////////////// */
 .main {
-  background-color: rgb(255, 158, 210);
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .main .seccion {
-  background-color: greenyellow;
   width: 100%;
   min-height: 600px;
   max-width: 480px;
   border: 2px solid black;
 }
 .main .seccion__header {
-  background-color: yellow;
   font-size: 3rem;
   font-weight: 700;
   padding: 4rem;
 }
 .main .seccion1 {
-  background-color: red;
   display: flex;
   flex-direction: column;
   padding-bottom: 1.5rem;
+  padding-bottom: 5rem;
 }
 .main .seccion1__contenedor-platos {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: rgb(255, 159, 100);
+  background-color: white;
   gap: 3.5rem;
 }
 .main .seccion1__contenedor-platos .plato {
   width: calc(100% - 3rem);
   height: 150px;
-  background-color: rgb(195, 146, 255);
+  background-color: #e4f0fd;
   margin-left: 3rem;
   display: flex;
-  border-radius: 2rem;
+  border-radius: 2rem 0 0 2rem;
+}
+.main .seccion1__contenedor-platos .plato:nth-child(2n) {
+  background-color: #fbe4f0;
 }
 .main .seccion1__contenedor-platos .plato__imagen {
-  width: 150px;
+  width: 180px;
   height: 150px;
   transform: translate(-20px, -20px);
   background-image: url(../img/assets/platos/plate__bacon-eggs.png);
@@ -105,6 +106,9 @@ ol {
   padding: 0.2rem 2rem;
   border-radius: 1.5rem;
   width: max-content;
+}
+.main .seccion1__contenedor-platos .plato__boton:hover {
+  background-color: #5900ce;
 }
 .main .seccion2 {
   background-color: blue;
