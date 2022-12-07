@@ -48,8 +48,6 @@ body {
     max-width: 380px;
 
     // border: 2px solid black;
-    box-shadow: 0 0 20px 0px #e2e7ff;
-    box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.2);
     overflow: hidden;
 
     // min-height: 600px;
@@ -273,8 +271,7 @@ body {
         }
 
         &:last-child {
-          border-bottom: 6px solid #d7d7f9;
-          // border-bottom: 6px solid black;
+          border-bottom: 5px solid #d7d7f9;
         }
       }
     }
@@ -330,6 +327,7 @@ body {
 
   .seccion {
     border-radius: 2rem;
+    box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.2);
   }
 }
 /* FOOTER///////////////////// */

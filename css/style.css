@@ -45,8 +45,6 @@ body {
   width: 100%;
   max-width: 480px;
   max-width: 380px;
-  box-shadow: 0 0 20px 0px #e2e7ff;
-  box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.2);
   overflow: hidden;
   height: max-content;
   min-height: 720px; /* provisional */
@@ -217,7 +215,7 @@ body {
   width: max-content;
 }
 .main .seccion2 .contenedor-elementos .elemento:last-child {
-  border-bottom: 6px solid #d7d7f9;
+  border-bottom: 5px solid #d7d7f9;
 }
 .main .seccion2 .contenedor-resultados {
   width: 100%;
@@ -260,6 +258,7 @@ body {
   }
   .seccion {
     border-radius: 2rem;
+    box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.2);
   }
 }
 /* FOOTER///////////////////// */
