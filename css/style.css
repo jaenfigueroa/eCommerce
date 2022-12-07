@@ -126,6 +126,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
+  transform: translateY(-30px);
 }
 .main .seccion2 .contenedor-elementos .elemento {
   width: 100%;
