@@ -49,6 +49,7 @@ body {
   max-width: 480px;
   max-width: 380px;
   box-shadow: 0 0 20px 0px #e2e7ff;
+  box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.3);
   border-radius: 2rem;
   overflow: hidden;
   height: max-content;
