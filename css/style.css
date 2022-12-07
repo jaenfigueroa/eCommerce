@@ -172,6 +172,8 @@ body {
   transform: translate(0, 25px);
   gap: 1rem;
   width: max-content;
+  position: relative;
+  padding-right: 1rem;
 }
 .main .seccion1__contenedor-platos .plato__nombre {
   font-size: 2rem;
