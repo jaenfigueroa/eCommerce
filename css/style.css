@@ -256,6 +256,7 @@ body {
 @media (min-width: 400px) {
   .main {
     padding: 5rem 0; /* provisional */
+    gap: 5rem;
   }
   .seccion {
     border-radius: 2rem;
