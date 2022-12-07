@@ -150,26 +150,39 @@ body {
       gap: 3.5rem;
 
       .plato {
-        width: calc(100% - 3rem);
+        // width: calc(100% - 3rem);
         height: 150px;
-        background-color: #e4f0fd;
         margin-left: 3rem;
         display: flex;
         border-radius: 2rem 0 0 2rem;
+        background-color: #ddd;
+        // background-color: crimson;
+        justify-content: flex-start;
 
-        &:nth-child(2n) {
+        &:nth-child(4n + 1) {
+          background-color: #e4f0fd;
+        }
+        &:nth-child(4n + 2) {
           background-color: #fbe4f0;
+        }
+        &:nth-child(4n + 3) {
+          background-color: #f7f7fe;
+        }
+        &:nth-child(4n + 4) {
+          background-color: #e4fdf1;
         }
 
         &__imagen {
           // background-color: gray;
-          width: 180px;
+          width: 150px;
           height: 150px;
+          max-width: 150px;
+          max-height: 150px;
           transform: translate(-20px, -20px);
-          background-image: url(../img/assets/platos/plate__bacon-eggs.png);
+          // background-image: url(../img/assets/platos/plate__bacon-eggs.png);
           background-size: contain;
           background-repeat: no-repeat;
-          background-position: center;
+          background-position: left center;
         }
 
         &__contenedor {
@@ -177,8 +190,13 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          transform: translate(0, 20px);
+          align-items: flex-start;
+          transform: translate(0, 25px);
           gap: 1rem;
+          width: max-content;
+
+          // position: relative;
+          // bottom: 0;
         }
 
         &__nombre {
@@ -186,12 +204,17 @@ body {
           font-size: 2rem;
           font-weight: 300;
           line-height: 20px;
+          text-transform: capitalize;
         }
 
         &__precio {
           // background-color: goldenrod;
           font-size: 3.2rem;
           font-weight: 700;
+
+          &::before {
+            content: '$';
+          }
         }
 
         &__boton {

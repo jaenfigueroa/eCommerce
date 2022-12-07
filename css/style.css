@@ -135,40 +135,56 @@ body {
   gap: 3.5rem;
 }
 .main .seccion1__contenedor-platos .plato {
-  width: calc(100% - 3rem);
   height: 150px;
-  background-color: #e4f0fd;
   margin-left: 3rem;
   display: flex;
   border-radius: 2rem 0 0 2rem;
+  background-color: #ddd;
+  justify-content: flex-start;
 }
-.main .seccion1__contenedor-platos .plato:nth-child(2n) {
+.main .seccion1__contenedor-platos .plato:nth-child(4n+1) {
+  background-color: #e4f0fd;
+}
+.main .seccion1__contenedor-platos .plato:nth-child(4n+2) {
   background-color: #fbe4f0;
 }
+.main .seccion1__contenedor-platos .plato:nth-child(4n+3) {
+  background-color: #f7f7fe;
+}
+.main .seccion1__contenedor-platos .plato:nth-child(4n+4) {
+  background-color: #e4fdf1;
+}
 .main .seccion1__contenedor-platos .plato__imagen {
-  width: 180px;
+  width: 150px;
   height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   transform: translate(-20px, -20px);
-  background-image: url(../img/assets/platos/plate__bacon-eggs.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
 }
 .main .seccion1__contenedor-platos .plato__contenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translate(0, 20px);
+  align-items: flex-start;
+  transform: translate(0, 25px);
   gap: 1rem;
+  width: max-content;
 }
 .main .seccion1__contenedor-platos .plato__nombre {
   font-size: 2rem;
   font-weight: 300;
   line-height: 20px;
+  text-transform: capitalize;
 }
 .main .seccion1__contenedor-platos .plato__precio {
   font-size: 3.2rem;
   font-weight: 700;
+}
+.main .seccion1__contenedor-platos .plato__precio::before {
+  content: "$";
 }
 .main .seccion1__contenedor-platos .plato__boton {
   background-color: #6b00f5;
