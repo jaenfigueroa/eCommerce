@@ -226,14 +226,15 @@ body {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
+  gap: 0.7rem 0rem;
 }
 .main .seccion2 .contenedor-resultados div span {
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   justify-content: end;
   align-items: flex-end;
   font-size: 1.8rem;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 2.5rem;
 }
 .main .seccion2 .contenedor-resultados div p {
   font-size: 3rem;
