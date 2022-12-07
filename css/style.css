@@ -209,7 +209,7 @@ body {
 .main .seccion2 .contenedor-elementos .elemento__imagen__numero {
   background-color: black;
   width: 35px;
-  height: 40px;
+  height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
