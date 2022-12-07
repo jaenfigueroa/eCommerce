@@ -109,6 +109,11 @@ body {
       i {
         font-size: 3rem;
         position: relative;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scaleX(1.25) scaleY(1.25);
+        }
 
         span {
           background-color: red;
@@ -198,9 +203,11 @@ body {
           border-radius: 1.5rem;
           // transform: translate(0, 20px);
           width: max-content;
+          transition: 0.3s;
 
           &:hover {
             background-color: #5900ce;
+            transform: scaleX(1.15) scaleY(1.15);
           }
         }
       }
@@ -297,8 +304,9 @@ body {
               // background-color: rgb(238, 127, 255);
               display: flex;
               align-items: center;
-              gap: 1.7rem;
               width: max-content;
+              width: 110px;
+              justify-content: space-between;
 
               button {
                 width: 35px;
@@ -310,14 +318,21 @@ body {
                 background-image: url(../img/assets/icons/chevron.svg);
                 background-position: 10.5px;
                 background-repeat: no-repeat;
+                transition: 0.3s;
 
                 &:last-child {
                   // background-color: red;
                   transform: rotateZ(180deg);
+
+                  &:hover {
+                    background-color: #620dd0;
+                    transform: scaleX(1.15) scaleY(1.15) rotateZ(180deg);
+                  }
                 }
 
                 &:hover {
                   background-color: #620dd0;
+                  transform: scaleX(1.15) scaleY(1.15);
                 }
               }
 

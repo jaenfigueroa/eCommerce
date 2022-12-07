@@ -100,6 +100,10 @@ body {
 .main .seccion__header i {
   font-size: 3rem;
   position: relative;
+  transition: 0.2s;
+}
+.main .seccion__header i:hover {
+  transform: scaleX(1.25) scaleY(1.25);
 }
 .main .seccion__header i span {
   background-color: red;
@@ -174,9 +178,11 @@ body {
   padding: 0.2rem 2rem;
   border-radius: 1.5rem;
   width: max-content;
+  transition: 0.3s;
 }
 .main .seccion1__contenedor-platos .plato__boton:hover {
   background-color: #5900ce;
+  transform: scaleX(1.15) scaleY(1.15);
 }
 .main .seccion2 .contenedor-elementos {
   width: 100%;
@@ -247,8 +253,9 @@ body {
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav {
   display: flex;
   align-items: center;
-  gap: 1.7rem;
   width: max-content;
+  width: 110px;
+  justify-content: space-between;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button {
   width: 35px;
@@ -260,12 +267,18 @@ body {
   background-image: url(../img/assets/icons/chevron.svg);
   background-position: 10.5px;
   background-repeat: no-repeat;
+  transition: 0.3s;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:last-child {
   transform: rotateZ(180deg);
 }
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:last-child:hover {
+  background-color: #620dd0;
+  transform: scaleX(1.15) scaleY(1.15) rotateZ(180deg);
+}
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:hover {
   background-color: #620dd0;
+  transform: scaleX(1.15) scaleY(1.15);
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav span {
   font-weight: bold;
