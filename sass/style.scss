@@ -57,9 +57,35 @@ body {
 
     &__header {
       // background-color: yellow;
-      font-size: 3rem;
-      font-weight: 700;
       padding: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      i {
+        font-size: 3rem;
+        position: relative;
+
+        span {
+          background-color: red;
+          color: white;
+          position: absolute;
+          font-size: 1.8rem;
+          border-radius: 100%;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: -15px;
+          left: 20px;
+          font-weight: 500;
+        }
+      }
     }
   }
 
