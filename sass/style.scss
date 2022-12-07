@@ -356,6 +356,16 @@ body {
     box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.2);
   }
 }
+
+@media (min-width: 827px) {
+  .seccion {
+    &__header {
+      i {
+        display: none;
+      }
+    }
+  }
+}
 /* FOOTER///////////////////// */
 .footer {
   // background-color: rgb(195, 195, 195);
