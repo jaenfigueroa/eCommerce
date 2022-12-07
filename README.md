@@ -16,7 +16,7 @@
 
 In this project, we're creating an eCommerce component.
 
-<img src="./assets/preview.png" align="center" style="width: 100%"  />
+<img src="./img/preview.png" align="center" style="width: 100%"  />
 
 ## 📌 Users should be able to:
 
