@@ -45,7 +45,7 @@ body {
   background-image: url(../img/assets/icons/bg__top-right.svg);
   top: 0;
   right: 0;
-  width: 500px;
+  width: 450px;
   height: 300px;
   background-position: top right;
   background-size: 500px;
@@ -55,7 +55,7 @@ body {
   left: 0;
   top: calc(50% - 300px);
   background-position: left;
-  width: 500px;
+  width: 260px;
   height: 600px;
   background-size: 250px;
 }
@@ -64,7 +64,7 @@ body {
   bottom: 0;
   right: 0;
   background-position: right bottom;
-  width: 500px;
+  width: 440px;
   height: 500px;
   background-size: 500px;
 }
