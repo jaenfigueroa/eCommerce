@@ -122,7 +122,6 @@ body {
 }
 .main .seccion2 .contenedor-elementos {
   width: 100%;
-  min-height: 400px;
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
@@ -215,7 +214,7 @@ body {
 }
 .main .seccion2 .contenedor-resultados {
   width: 100%;
-  padding: 2rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

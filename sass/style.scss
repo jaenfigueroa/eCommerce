@@ -145,15 +145,13 @@ body {
   }
 
   .seccion2 {
-    // background-color: rgb(187, 0, 255);
+    // background-color: blue;
 
     .contenedor-elementos {
       // background-color: rgb(78, 207, 78);
       width: 100%;
-      min-height: 400px;
       display: flex;
       flex-direction: column;
-      // gap: 1.5rem;
       padding: 0 2rem;
       transform: translateY(-30px);
 
@@ -272,7 +270,7 @@ body {
       // border: 1px solid black;
       // background-color: rgb(255, 192, 255);
       width: 100%;
-      padding: 2rem;
+      padding: 0 2rem;
       display: flex;
       flex-direction: column;
       gap: 2rem;
