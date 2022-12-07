@@ -52,6 +52,7 @@ body {
   border-radius: 2rem;
   overflow: hidden;
   height: max-content;
+  min-height: 720px; /* provisional */
 }
 .main .seccion__header {
   font-size: 3rem;
