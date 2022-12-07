@@ -30,17 +30,27 @@ ol {
   list-style: none;
 }
 
+body {
+  background-color: #e8e9ee;
+}
+
 /* MAIN///////////////////// */
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 .main .seccion {
+  background-color: white;
   width: 100%;
   min-height: 600px;
   max-width: 480px;
-  border: 2px solid black;
+  box-shadow: 0 0 15px 0px #cfd4f0;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 .main .seccion__header {
   font-size: 3rem;
@@ -110,65 +120,55 @@ ol {
 .main .seccion1__contenedor-platos .plato__boton:hover {
   background-color: #5900ce;
 }
-.main .seccion2 {
-  background-color: blue;
-}
 .main .seccion2 .contenedor-elementos {
-  background-color: green;
   width: 100%;
   min-height: 400px;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 .main .seccion2 .contenedor-elementos .elemento {
-  background-color: aqua;
   width: 100%;
   display: flex;
-  padding: 3rem 0;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
   gap: 2rem;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #d7d7f9;
 }
 .main .seccion2 .contenedor-elementos .elemento__imagen {
-  width: 100px;
-  height: 100px;
-  background-color: gray;
+  width: 150px;
+  height: 150px;
   transform: translate(0, -10px);
   background-image: url(../img/assets/platos/plate__fish-sticks-fries.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transform: translate(0px, -10px);
 }
 .main .seccion2 .contenedor-elementos .elemento div {
-  background-color: chocolate;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  min-width: 250px;
+  width: 250px;
 }
 .main .seccion2 .contenedor-elementos .elemento div .header {
-  background-color: yellow;
   display: flex;
   flex-direction: column;
 }
 .main .seccion2 .contenedor-elementos .elemento div .header .nombre {
-  background-color: rgb(37, 37, 186);
-  color: white;
   font-weight: 400;
 }
 .main .seccion2 .contenedor-elementos .elemento div .header .precio-unitario {
-  background-color: rgb(88, 161, 31);
-  color: white;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 .main .seccion2 .contenedor-elementos .elemento div .main {
   display: flex;
   flex-direction: row;
-  background-color: #6b00f5;
+  background-color: transparent;
   justify-content: space-between;
 }
 .main .seccion2 .contenedor-elementos .elemento div .main__nav {
-  background-color: rgb(232, 80, 255);
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -179,21 +179,21 @@ ol {
   height: 40px;
   border-radius: 50%;
   border: none;
+  background-color: #6b00f5;
+  color: white;
 }
 .main .seccion2 .contenedor-elementos .elemento div .main__nav span {
   font-weight: bold;
 }
 .main .seccion2 .contenedor-elementos .elemento div .main__precio {
-  background-color: yellow;
   font-size: 3rem;
   font-weight: 700;
   width: max-content;
 }
 .main .seccion2 .contenedor-elementos .elemento:last-child {
-  border-bottom: 6px solid red;
+  border-bottom: 6px solid #d7d7f9;
 }
 .main .seccion2 .contenedor-resultados {
-  background-color: pink;
   width: 100%;
   padding: 2rem;
   display: flex;
@@ -217,7 +217,6 @@ ol {
 
 /* FOOTER///////////////////// */
 .footer {
-  background-color: rgb(195, 195, 195);
   height: 10rem;
   display: flex;
   width: 100%;

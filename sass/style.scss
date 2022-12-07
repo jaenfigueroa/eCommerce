@@ -28,19 +28,32 @@ ul,
 ol {
   list-style: none;
 }
+body {
+  background-color: #e8e9ee;
+}
 /* MAIN///////////////////// */
 .main {
   // background-color: rgb(255, 158, 210);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
+
+  justify-content: center;
+  align-items: flex-start;
+  // padding: 5rem 0;
 
   .seccion {
     // background-color: greenyellow;
+    background-color: white;
     width: 100%;
     min-height: 600px;
     max-width: 480px;
-    border: 2px solid black;
+
+    // border: 2px solid black;
+    box-shadow: 0 0 15px 0px #cfd4f0;
+    border-radius: 2rem;
+    overflow: hidden;
 
     &__header {
       // background-color: yellow;
@@ -130,68 +143,70 @@ ol {
   }
 
   .seccion2 {
-    background-color: blue;
+    // background-color: blue;
 
     .contenedor-elementos {
-      background-color: green;
+      // background-color: green;
       width: 100%;
       min-height: 400px;
       display: flex;
       flex-direction: column;
       // gap: 1.5rem;
-      padding: 0 2rem;
+      padding: 0 3rem;
 
       .elemento {
-        background-color: aqua;
+        // background-color: aqua;
         width: 100%;
         display: flex;
-        padding: 3rem 0;
+        justify-content: space-between;
+        padding: 2rem 0 0 0;
         gap: 2rem;
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid #d7d7f9;
 
         &__imagen {
-          width: 100px;
-          height: 100px;
-          background-color: gray;
+          width: 150px;
+          height: 150px;
+          // background-color: gray;
           transform: translate(0, -10px);
           background-image: url(../img/assets/platos/plate__fish-sticks-fries.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
+          transform: translate(0px, -10px);
         }
 
         div {
-          background-color: chocolate;
+          // background-color: chocolate;
           display: flex;
           flex-direction: column;
           gap: 2rem;
-          min-width: 250px;
+          width: 250px;
 
           .header {
-            background-color: yellow;
+            // background-color: yellow;
             display: flex;
             flex-direction: column;
 
             .nombre {
-              background-color: rgb(37, 37, 186);
-              color: white;
+              // background-color: rgb(37, 37, 186);
               font-weight: 400;
             }
             .precio-unitario {
-              background-color: rgb(88, 161, 31);
-              color: white;
-              font-weight: 600;
+              // background-color: rgb(88, 161, 31);
+              font-weight: 700;
+              font-size: 1.8rem;
             }
           }
 
           .main {
             display: flex;
             flex-direction: row;
-            background-color: #6b00f5;
+            // background-color: #6b00f5;
+            background-color: transparent;
             justify-content: space-between;
 
             &__nav {
-              background-color: rgb(232, 80, 255);
+              // background-color: rgb(232, 80, 255);
               display: flex;
               align-items: center;
               gap: 2rem;
@@ -202,6 +217,8 @@ ol {
                 height: 40px;
                 border-radius: 50%;
                 border: none;
+                background-color: #6b00f5;
+                color: white;
               }
 
               span {
@@ -210,7 +227,7 @@ ol {
             }
 
             &__precio {
-              background-color: yellow;
+              // background-color: yellow;
               font-size: 3rem;
               font-weight: 700;
               width: max-content;
@@ -219,12 +236,12 @@ ol {
         }
 
         &:last-child {
-          border-bottom: 6px solid red;
+          border-bottom: 6px solid #d7d7f9;
         }
       }
     }
     .contenedor-resultados {
-      background-color: pink;
+      // background-color: pink;
       width: 100%;
       padding: 2rem;
       display: flex;
@@ -252,7 +269,7 @@ ol {
 
 /* FOOTER///////////////////// */
 .footer {
-  background-color: rgb(195, 195, 195);
+  // background-color: rgb(195, 195, 195);
   height: 10rem;
   display: flex;
   width: 100%;
