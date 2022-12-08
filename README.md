@@ -16,7 +16,13 @@
 
 In this project, I have created an e-commerce component.
 
+### Desktop
+
 <img src="./img/preview1.gif" align="center" style="width: 100%"  />
+
+### Mobile
+
+<img src="./img/preview1.gif" align="center" style="width: 60%"  />
 
 ## 📌 Users should be able to:
 
