@@ -1,6 +1,6 @@
 <div align="center" >
 
-# Challenge #2 - eCommerce 💵🍽️
+# eCommerce 💵🍽️
 
 </div>
 
