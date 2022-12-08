@@ -14,7 +14,7 @@
 
 ## 💡 Brief
 
-In this project, I have created an e-commerce component.
+In this project, I have developed an e-commerce component.
 
 ### Desktop preview
 
