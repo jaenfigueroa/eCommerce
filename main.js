@@ -82,7 +82,7 @@ function crearPlato(id = 0) {
   clon.querySelector('.plato__imagen').style.backgroundImage = `url(${imagen})`
   clon.querySelector('.plato__nombre').textContent = nombre
   clon.querySelector('.plato__precio').textContent = precio
-  clon.querySelector('.plato__boton').onclick = () => agregar(id)
+  // clon.querySelector('.plato__boton').onclick = () => agregar(id)
 
   clon.querySelector(`.boton-agregar`).onclick = () => agregarAlCarrito(id)
   clon.querySelector(`.boton-quitar`).onclick = () => quitarDelCarrito(id)
@@ -94,18 +94,27 @@ function crearPlato(id = 0) {
   contenedor.append(fragmento)
 }
 
-crearPlato(0)
-crearPlato(1)
-crearPlato(5)
-crearPlato(6)
-crearPlato(7)
+// crearPlato(0)
+// crearPlato(1)
+// crearPlato(5)
+// crearPlato(6)
+// crearPlato(7)
+
+function renderizarListaPlatos() {
+  platos.forEach((plato) => {
+    crearPlato(plato.id)
+  })
+}
+
+renderizarListaPlatos()
 /////////////////////////////////////////
 /////////////////////////////////////////
 
 /////////////////////////////////////////
-function agregar(id) {
-  console.log(`El plato numero ${id}, fue agregado la carrito`)
-}
+// function agregar(id) {
+//   /* INNESARIO ???? CREO QUE SI*/
+//   console.log(`El plato numero ${id}, fue agregado la carrito`)
+// }
 
 ///SECCION 2 - CREAR ELEMENTOS EN EL CARRITO/////////////////////////
 function crearElemento(id = 0, cantidad = 0) {
@@ -282,9 +291,16 @@ function actualizarCarrito() {
 
   //rendrerizar los elementos actualizados
   renderizarElementos()
+
+  //////////////// actualizat numero del pop rojo del carrito
+  actualizarPopCarrito(carrito.length)
 }
 
-//////////////////////////EN TEORIA DEBERIA FUNCIONAR
+//////////////////////////
 function verificarExistencia(id) {
   return carrito.some((x) => x.id === id)
+}
+////////////////////////
+function actualizarPopCarrito(cantidad) {
+  document.getElementById('popCarrito').textContent = cantidad
 }
