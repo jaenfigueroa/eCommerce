@@ -111,6 +111,7 @@ function agregar(id) {
 // ]
 /////////////////////////////////////////////////
 function crearElemento(id = 0, cantidad = 0) {
+  let imagen = platos[id].imagen
   let nombre = platos[id].nombre
   let precioUnitario = platos[id].precio
 
@@ -121,6 +122,7 @@ function crearElemento(id = 0, cantidad = 0) {
   const clon = template.cloneNode(true)
   const fragmento = document.createDocumentFragment()
 
+  clon.querySelector('.elemento__imagen').style.backgroundImage = `url(${imagen})`
   clon.querySelector('.nombre').textContent = nombre
   clon.querySelector('.precio-unitario').textContent = precioUnitario
   clon.querySelector('.cantidad-elementos').textContent = cantidad
@@ -131,8 +133,9 @@ function crearElemento(id = 0, cantidad = 0) {
   contenedor.append(fragmento)
 }
 /////////////////////////////////////////////////
-crearElemento(0, 2)
+crearElemento(0, 5)
 crearElemento(1, 3)
+crearElemento(2, 4)
 
 /////////////////////////////////////////////////
 function calcularTotal() {
