@@ -1,6 +1,6 @@
 <div align="center" >
 
-# Challenge #2 - eCommerce 💵🍽️
+# eCommerce 💵🍽️
 
 </div>
 
@@ -14,7 +14,7 @@
 
 ## 💡 Brief
 
-In this project, we're creating an eCommerce component.
+In this project, I have created an e-commerce component.
 
 <img src="./img/preview2.png" align="center" style="width: 100%"  />
 
