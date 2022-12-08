@@ -89,8 +89,10 @@ function crearPlato(id = 0) {
 }
 
 crearPlato(0)
+crearPlato(1)
 crearPlato(5)
 crearPlato(6)
+crearPlato(7)
 /////////////////////////////////////////
 /////////////////////////////////////////
 
