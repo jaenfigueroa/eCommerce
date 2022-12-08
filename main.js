@@ -19,79 +19,144 @@ const platos = [
   {
     id: 0,
     nombre: 'bacon-eggs',
-    precio: 2.23
+    precio: 2.23,
+    imagen: './img/assets/platos/plate__bacon-eggs.png'
   },
   {
     id: 1,
     nombre: 'chicken-salad',
-    precio: 5.12
+    precio: 5.12,
+    imagen: './img/assets/platos/plate__chicken-salad.png'
   },
   {
     id: 2,
     nombre: 'fish-sticks-fries',
-    precio: 7.82
+    precio: 7.82,
+    imagen: './img/assets/platos/plate__fish-sticks-fries.png'
   },
   {
     id: 3,
     nombre: 'french-fries',
-    precio: 7.82
+    precio: 6.85,
+    imagen: './img/assets/platos/plate__french-fries.png'
   },
   {
     id: 4,
     nombre: 'ravioli',
-    precio: 7.82
+    precio: 5.37,
+    imagen: './img/assets/platos/plate__ravioli.png'
   },
   {
     id: 5,
     nombre: 'salmon-vegetables',
-    precio: 7.82
+    precio: 9.35,
+    imagen: './img/assets/platos/plate__salmon-vegetables.png'
   },
   {
     id: 6,
     nombre: 'spaghetti-meat-sauce',
-    precio: 7.82
+    precio: 2.68,
+    imagen: './img/assets/platos/plate__spaghetti-meat-sauce.png'
   },
   {
     id: 7,
     nombre: 'tortellini',
-    precio: 7.82
+    precio: 4.62,
+    imagen: './img/assets/platos/plate__tortellini.png'
   }
 ]
 
 /////////////////////////////////////////
-const contenedorPlatos = document.getElementById('contenedor-platos')
+/////////////////////////////////////////
+function crearPlato(id = 0) {
+  let nombre = platos[id].nombre
+  let precio = platos[id].precio
+  let imagen = platos[id].imagen
+  ////////////////////////
+  const contenedor = document.getElementById('contenedor-platos')
+  const template = document.getElementById('template-platos').content
 
-platos.forEach(plato => {
-  let articulo = document.createElement('article')
-  let imagen = document.createElement('picture')
-  let contenedor = document.createElement('div')
-  let nombre = document.createElement('h3')
-  let precio = document.createElement('p')
-  let boton = document.createElement('button')
+  const clon = template.cloneNode(true)
+  const fragmento = document.createDocumentFragment()
 
-  articulo.className = 'plato'
-  imagen.className = 'plato__imagen'
-  contenedor.className = 'plato__contenedor'
-  nombre.className = 'plato__nombre'
-  precio.className = 'plato__precio'
-  boton.className = 'plato__boton'
+  clon.querySelector('.plato__imagen').style.backgroundImage = `url(${imagen})`
+  clon.querySelector('.plato__nombre').textContent = nombre
+  clon.querySelector('.plato__precio').textContent = precio
+  clon.querySelector('.plato__boton').onclick = () => agregar(id)
 
-  imagen.style.backgroundImage = `url('./img/assets/platos/plate__${plato.nombre}.png')`
-  nombre.textContent = plato.nombre.split('-').join(' ')
-  precio.textContent = plato.precio
-  boton.addEventListener('click', () => agregar(plato.id))
-  boton.textContent = 'Add to cart'
+  fragmento.appendChild(clon)
+  contenedor.append(fragmento)
+}
 
-  contenedor.append(nombre)
-  contenedor.append(precio)
-  contenedor.append(boton)
-  articulo.append(imagen)
-  articulo.append(contenedor)
-
-  contenedorPlatos.append(articulo)
-})
+crearPlato(0)
+crearPlato(1)
+crearPlato(2)
+crearPlato(3)
+/////////////////////////////////////////
+/////////////////////////////////////////
 
 /////////////////////////////////////////
 function agregar(id) {
   console.log(`El plato numero ${id}, fue agregado la carrito`)
 }
+
+//SECCION 2///////////////////////////////
+// let carrito = [
+//   {
+//     plato: 1,
+//     nombre: platos[1].nombre,
+//     precio: platos[1].precio,
+//     cantidad: 3
+//   }
+// ]
+/////////////////////////////////////////////////
+function crearElemento(nombre = 'nombre', precioUnitario = 0, cantidad = 0) {
+  const contenedor = document.getElementById('contenedor-elementos')
+  const template = document.getElementById('template-elementos').content
+
+  const clon = template.cloneNode(true)
+  const fragmento = document.createDocumentFragment()
+
+  clon.querySelector('.nombre').textContent = nombre
+  clon.querySelector('.precio-unitario').textContent = precioUnitario
+  clon.querySelector('.cantidad-elementos').textContent = cantidad
+  clon.querySelector('.cantidad-elementos-plato').textContent = cantidad
+  clon.querySelector('.precio-final').textContent = precioUnitario * cantidad
+
+  fragmento.appendChild(clon)
+  contenedor.append(fragmento)
+}
+/////////////////////////////////////////////////
+crearElemento('saltado', 4, 3)
+crearElemento('arroz con leche', 2, 8)
+
+/////////////////////////////////////////////////
+function calcularTotal() {
+  let precios = document.querySelectorAll('.precio-final')
+
+  //subtotal
+  let subtotal = 0
+
+  precios.forEach(x => {
+    console.log(Number(x.textContent))
+
+    subtotal += Number(x.textContent)
+  })
+
+  console.log('subtotal', subtotal)
+
+  //tax
+  let tax = subtotal * 0.0975
+  console.log('tax', tax)
+  //total
+  let total = subtotal + tax
+  console.log('total', total)
+
+  document.getElementById('subtotal').textContent = subtotal.toFixed(2)
+  document.getElementById('tax').textContent = tax.toFixed(2)
+  document.getElementById('total').textContent = total.toFixed(2)
+}
+/////////////////////////////////////////////////
+calcularTotal()
+
+/////////////////////////////////////////////////

@@ -261,10 +261,14 @@ body {
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header .nombre {
   font-weight: 400;
   font-size: 1.8rem;
+  text-transform: capitalize;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header .precio-unitario {
   font-weight: 700;
   font-size: 1.8rem;
+}
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header .precio-unitario:before {
+  content: "$";
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main {
   display: flex;
@@ -306,10 +310,13 @@ body {
   font-weight: bold;
   font-size: 1.8rem;
 }
-.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__precio {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .precio-final {
   font-size: 3rem;
   font-weight: 700;
   width: max-content;
+}
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .precio-final:before {
+  content: "$";
 }
 .main .seccion2 .contenedor-elementos .elemento:last-child {
   border-bottom: 5px solid #d7d7f9;
@@ -337,15 +344,18 @@ body {
   font-size: 1.8rem;
   padding: 0.6rem 2.5rem;
 }
-.main .seccion2 .contenedor-resultados div p {
+.main .seccion2 .contenedor-resultados div .valores {
   font-size: 3rem;
   font-weight: 700;
   display: flex;
   justify-content: end;
   align-items: flex-end;
 }
-.main .seccion2 .contenedor-resultados div p:last-child {
+.main .seccion2 .contenedor-resultados div .valores:last-child {
   color: #6b00f5;
+}
+.main .seccion2 .contenedor-resultados div .valores:before {
+  content: "$";
 }
 
 /* FOOTER///////////////////// */

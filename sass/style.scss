@@ -308,11 +308,16 @@ body {
               // background-color: rgb(145, 145, 255);
               font-weight: 400;
               font-size: 1.8rem;
+              text-transform: capitalize;
             }
             .precio-unitario {
               // background-color: rgb(173, 255, 111);
               font-weight: 700;
               font-size: 1.8rem;
+
+              &:before {
+                content: '$';
+              }
             }
           }
 
@@ -366,11 +371,15 @@ body {
               }
             }
 
-            .main__precio {
+            .precio-final {
               // background-color: yellow;
               font-size: 3rem;
               font-weight: 700;
               width: max-content;
+
+              &:before {
+                content: '$';
+              }
             }
           }
         }
@@ -407,7 +416,7 @@ body {
           font-size: 1.8rem;
           padding: 0.6rem 2.5rem;
         }
-        p {
+        .valores {
           font-size: 3rem;
           font-weight: 700;
 
@@ -417,6 +426,10 @@ body {
 
           &:last-child {
             color: #6b00f5;
+          }
+
+          &:before {
+            content: '$';
           }
         }
       }

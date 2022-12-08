@@ -31,7 +31,7 @@
     </div>
     <!-- MAIN -->
     <main class="main">
-      <!-- lista de todos los platos -->
+      <!-- SECCION 1 - LISTA DE PLATOSl-->
       <section class="seccion seccion1" id="seccion-1">
         <!-- header -->
         <header  class="seccion__header">
@@ -40,23 +40,25 @@
             <span>2</span>
           </i>
         </header>
-        <!-- contenedor-platos -->
+
+        <!-- CONTENEDOR DE PLATOS -->
         <section class="seccion1__contenedor-platos" id="contenedor-platos">
-          <!--  -->
-          <!-- <article class="plato">
-            <picture class="plato__imagen"></picture>
-            <div class="plato__contenedor">
-              <h3 class="plato__nombre">French Fries with Ketchup</h3>
-              <p class="plato__precio">$2.23</p>
-              <button class="plato__boton">Add to cart</button>
-            </div>
-          </article> -->
-          <!--  -->
-          <!--  -->
+          <!-- template -->
+          <template id="template-platos">
+            <article class="plato">
+              <picture class="plato__imagen" style="background-image:url(./img/assets/platos/plate__ravioli.png) ;"></picture>
+              <div class="plato__contenedor">
+                <h3 class="plato__nombre">French Fries with Ketchup</h3>
+                <p class="plato__precio">$2.23</p>
+                <button class="plato__boton">Add to cart</button>
+              </div>
+            </article>
+          </template>
           <!--  -->
         </section>
       </section>
-      <!-- carrito con los platos -->
+
+      <!-- SECCION 2 - CARRITO-->
       <section class="seccion seccion2" id="seccion-2">
         <!-- header -->
         <header class="seccion__header">
@@ -65,72 +67,49 @@
             <i class="fa-solid fa-x" id="boton-volver-menu"></i>
           </div>
         </header>
-        <!-- contenedor elementos -->
-        <div class="contenedor-elementos">
-          <!--  -->
-          <article class="elemento">
-            <picture class="elemento__imagen">
-              <div class="elemento__imagen__numero">
-                <span>50</span>
-              </div>
-            </picture>
-            <div class="elemento__contenedor">
-              <!-- header -->
-              <header class="elemento__header">
-                <h4 class="nombre">
-                  French Fries with Ketchup
-                </h4>
-                <p class="precio-unitario">$2.24</p>
-              </header>
-              <!-- main -->
-              <main class="elemento__main">
-                <nav class="main__nav">
-                  <button></button>
-                  <span>2</span>
-                  <button></button>
-                </nav>
-                <p class="main__precio">$4.46</p>
-              </main>
-            </div>
-          </article>
-          <!--  -->
-          <article class="elemento">
-            <picture class="elemento__imagen">
-              <div class="elemento__imagen__numero">
-                <span>5</span>
-              </div>
-            </picture>
-            <div class="elemento__contenedor">
-              <!-- header -->
-              <header class="elemento__header">
-                <h4 class="nombre">
-                  Spaghetti with Sauce
-                </h4>
-                <p class="precio-unitario">$2.24</p>
-              </header>
-              <!-- main -->
-              <main class="elemento__main">
-                <nav class="main__nav">
-                  <button></button>
-                  <span>20</span>
-                  <button></button>
-                </nav>
-                <p class="main__precio">$15.64</p>
-              </main>
-            </div>
-          </article>
-          <!--  -->
 
+        <!-- CONTENEDOR ELEMENTOS CARRITO -->
+        <div class="contenedor-elementos" id="contenedor-elementos">
+          <!-- template -->
+          <template id="template-elementos">
+            <article class="elemento">
+              <picture class="elemento__imagen">
+                <div class="elemento__imagen__numero">
+                  <span class="cantidad-elementos-plato">0</span>
+                </div>
+              </picture>
+              <div class="elemento__contenedor">
+                <!-- header -->
+                <header class="elemento__header">
+                  <h4 class="nombre">
+                    French Fries with Ketchup
+                  </h4>
+                  <p class="precio-unitario">0</p>
+                </header>
+                <!-- main -->
+                <main class="elemento__main">
+                  <nav class="main__nav">
+                    <button></button>
+                    <span class="cantidad-elementos">0</span>
+                    <button></button>
+                  </nav>
+                  <p class="precio-final">0</p>
+                </main>
+              </div>
+            </article>
+          </template>
           <!--  -->
         </div>
+
+        <!-- RESULTADOS, SUBTOTAL, TAX, TOTAL -->
         <div class="contenedor-resultados">
             <div>
               <span>Subtotal:</span>
-              <p>$20.10</p>
+              <p class="valores" id="subtotal">0</p>
               <span>Tax:</span>
-              <p>$1.96</p>
+              <p class="valores" id="tax">0</p>
               <span>Total:</span>
-              <p>$30.12</p>
+              <p class="valores" id="total">0</p>
             </div>
         </div>
       </section>
