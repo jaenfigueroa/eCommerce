@@ -84,6 +84,12 @@ function crearPlato(id = 0) {
   clon.querySelector('.plato__precio').textContent = precio
   clon.querySelector('.plato__boton').onclick = () => agregar(id)
 
+  clon.querySelector(`.boton-agregar`).onclick = () => agregarAlCarrito(id)
+  clon.querySelector(`.boton-quitar`).onclick = () => quitarDelCarrito(id)
+
+  clon.querySelector(`.boton-agregar`).id = `boton-add-${id}`
+  clon.querySelector(`.boton-quitar`).id = `boton-quit-${id}`
+
   fragmento.appendChild(clon)
   contenedor.append(fragmento)
 }
@@ -211,4 +217,20 @@ function modificarCantidad(id, accion) {
   })
 
   renderizarElementos()
+}
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+function agregarAlCarrito(id) {
+  console.log(`el elemento ${id}, se agrego del carrito`)
+
+  document.getElementById(`boton-add-${id}`).style.display = 'none'
+  document.getElementById(`boton-quit-${id}`).style.display = 'flex'
+}
+
+function quitarDelCarrito(id) {
+  console.log(`el elemento ${id}, se quito del carrito`)
+
+  document.getElementById(`boton-add-${id}`).style.display = 'initial'
+  document.getElementById(`boton-quit-${id}`).style.display = 'none'
 }
