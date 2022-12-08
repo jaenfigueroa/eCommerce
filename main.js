@@ -110,7 +110,11 @@ function agregar(id) {
 //   }
 // ]
 /////////////////////////////////////////////////
-function crearElemento(nombre = 'nombre', precioUnitario = 0, cantidad = 0) {
+function crearElemento(id = 0, cantidad = 0) {
+  let nombre = platos[id].nombre
+  let precioUnitario = platos[id].precio
+
+  ///////////////////////////////
   const contenedor = document.getElementById('contenedor-elementos')
   const template = document.getElementById('template-elementos').content
 
@@ -127,8 +131,8 @@ function crearElemento(nombre = 'nombre', precioUnitario = 0, cantidad = 0) {
   contenedor.append(fragmento)
 }
 /////////////////////////////////////////////////
-crearElemento('saltado', 4, 3)
-crearElemento('arroz con leche', 2, 8)
+crearElemento(0, 2)
+crearElemento(1, 3)
 
 /////////////////////////////////////////////////
 function calcularTotal() {
