@@ -16,7 +16,7 @@
 
 In this project, I have created an e-commerce component.
 
-<img src="./img/preview2.png" align="center" style="width: 100%"  />
+<img src="./img/preview1.gif" align="center" style="width: 100%"  />
 
 ## 📌 Users should be able to:
 
