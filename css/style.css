@@ -314,6 +314,7 @@ body {
   font-size: 3.1rem;
   font-weight: 700;
   width: max-content;
+  margin-left: 1rem;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .precio-final:before {
   content: "$";

@@ -134,7 +134,7 @@ function crearElemento(id = 0, cantidad = 0) {
 /////////////////////////////////////////////////
 crearElemento(0, 5)
 crearElemento(1, 3)
-crearElemento(5, 100)
+crearElemento(5, 10)
 
 /////////////////////////////////////////////////
 function calcularTotal() {
