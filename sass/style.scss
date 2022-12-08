@@ -85,8 +85,7 @@ body {
     // background-color: greenyellow;
     background-color: white;
     width: 100%;
-    max-width: 480px;
-    max-width: 380px;
+    max-width: 400px;
 
     // border: 2px solid black;
     overflow: hidden;
@@ -255,8 +254,7 @@ body {
         display: flex;
         justify-content: space-between;
         gap: 2rem;
-        border-bottom: 2px solid #d7d7f9;
-        // border-bottom: 2px solid black;
+        border-bottom: 1.5px solid #d7d7f9;
 
         padding: 3rem 0;
 
@@ -374,7 +372,7 @@ body {
 
             .precio-final {
               // background-color: yellow;
-              font-size: 3rem;
+              font-size: 3.1rem;
               font-weight: 700;
               width: max-content;
 

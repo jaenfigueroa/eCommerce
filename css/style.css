@@ -82,8 +82,7 @@ body {
 .main .seccion {
   background-color: white;
   width: 100%;
-  max-width: 480px;
-  max-width: 380px;
+  max-width: 400px;
   overflow: hidden;
   height: max-content;
   min-height: 720px; /* provisional */
@@ -218,7 +217,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  border-bottom: 2px solid #d7d7f9;
+  border-bottom: 1.5px solid #d7d7f9;
   padding: 3rem 0;
 }
 .main .seccion2 .contenedor-elementos .elemento__imagen {
@@ -312,7 +311,7 @@ body {
   font-size: 1.8rem;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .precio-final {
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-weight: 700;
   width: max-content;
 }

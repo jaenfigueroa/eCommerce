@@ -18,25 +18,25 @@ botonVolverMenu.addEventListener('click', () => {
 const platos = [
   {
     id: 0,
-    nombre: 'bacon-eggs',
+    nombre: 'bacon eggs',
     precio: 2.23,
     imagen: './img/assets/platos/plate__bacon-eggs.png'
   },
   {
     id: 1,
-    nombre: 'chicken-salad',
+    nombre: 'chicken salad',
     precio: 5.12,
     imagen: './img/assets/platos/plate__chicken-salad.png'
   },
   {
     id: 2,
-    nombre: 'fish-sticks-fries',
+    nombre: 'fish sticks fries',
     precio: 7.82,
     imagen: './img/assets/platos/plate__fish-sticks-fries.png'
   },
   {
     id: 3,
-    nombre: 'french-fries',
+    nombre: 'french fries',
     precio: 6.85,
     imagen: './img/assets/platos/plate__french-fries.png'
   },
@@ -48,13 +48,13 @@ const platos = [
   },
   {
     id: 5,
-    nombre: 'salmon-vegetables',
+    nombre: 'salmon vegetables',
     precio: 9.35,
     imagen: './img/assets/platos/plate__salmon-vegetables.png'
   },
   {
     id: 6,
-    nombre: 'spaghetti-meat-sauce',
+    nombre: 'spaghetti meat sauce',
     precio: 2.68,
     imagen: './img/assets/platos/plate__spaghetti-meat-sauce.png'
   },
@@ -89,9 +89,8 @@ function crearPlato(id = 0) {
 }
 
 crearPlato(0)
-crearPlato(1)
-crearPlato(2)
-crearPlato(3)
+crearPlato(5)
+crearPlato(6)
 /////////////////////////////////////////
 /////////////////////////////////////////
 
@@ -127,7 +126,7 @@ function crearElemento(id = 0, cantidad = 0) {
   clon.querySelector('.precio-unitario').textContent = precioUnitario
   clon.querySelector('.cantidad-elementos').textContent = cantidad
   clon.querySelector('.cantidad-elementos-plato').textContent = cantidad
-  clon.querySelector('.precio-final').textContent = precioUnitario * cantidad
+  clon.querySelector('.precio-final').textContent = (precioUnitario * cantidad).toFixed(2)
 
   fragmento.appendChild(clon)
   contenedor.append(fragmento)
@@ -135,7 +134,7 @@ function crearElemento(id = 0, cantidad = 0) {
 /////////////////////////////////////////////////
 crearElemento(0, 5)
 crearElemento(1, 3)
-crearElemento(2, 4)
+crearElemento(5, 100)
 
 /////////////////////////////////////////////////
 function calcularTotal() {
