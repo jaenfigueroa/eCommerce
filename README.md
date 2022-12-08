@@ -16,11 +16,11 @@
 
 In this project, I have created an e-commerce component.
 
-### Desktop
+### Desktop preview
 
 <img src="./img/preview1.gif" align="center" style="width: 100%"  />
 
-### Mobile
+### Mobile preview
 
 <img src="./img/preview2.gif" align="center" style="width: 70%"  />
 
