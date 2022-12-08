@@ -22,7 +22,7 @@ In this project, I have created an e-commerce component.
 
 ### Mobile
 
-<img src="./img/preview2.gif" align="center" style="width: 60%"  />
+<img src="./img/preview2.gif" align="center" style="width: 70%"  />
 
 ## 📌 Users should be able to:
 
