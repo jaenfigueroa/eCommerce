@@ -442,6 +442,8 @@ body {
       align-items: flex-end;
       padding-bottom: 10rem;
 
+      display: none;
+
       div {
         // background-color: yellow;
 
@@ -474,6 +476,18 @@ body {
             content: '$';
           }
         }
+      }
+    }
+
+    .aviso-carrito-vacio {
+      // background-color: red;
+      padding: 0 4.2rem;
+      transform: translateY(-9px);
+
+      // display: none; /* PROVISIONAL */
+
+      span {
+        font-size: 1.8rem;
       }
     }
   }

@@ -239,6 +239,10 @@ function agregarAlCarrito(id) {
   }
 
   actualizarCarrito() /* PROVISIONAL */
+
+  //mostrar la tablar de subtotal, tax, y total
+  document.getElementById('contenedor-resultados').style.display = 'flex'
+  document.getElementById('aviso-carrito-vacio').style.display = 'none'
 }
 
 function quitarDelCarrito(id) {
@@ -255,6 +259,15 @@ function quitarDelCarrito(id) {
   }
 
   actualizarCarrito() /* PROVISIONAL */
+
+  console.log(carrito)
+  console.log('longitud del carrito: ', carrito.length)
+
+  //ocultar la tabla de subtotal, tax, y total, si el carrito esta en 0
+  if (carrito.length === 0) {
+    document.getElementById('contenedor-resultados').style.display = 'none'
+    document.getElementById('aviso-carrito-vacio').style.display = 'initial'
+  }
 }
 
 //IR AL CARRITO///////////////////////

@@ -367,6 +367,7 @@ body {
   gap: 2rem;
   align-items: flex-end;
   padding-bottom: 10rem;
+  display: none;
 }
 .main .seccion2 .contenedor-resultados div {
   display: grid;
@@ -394,6 +395,13 @@ body {
 }
 .main .seccion2 .contenedor-resultados div .valores:before {
   content: "$";
+}
+.main .seccion2 .aviso-carrito-vacio {
+  padding: 0 4.2rem;
+  transform: translateY(-9px);
+}
+.main .seccion2 .aviso-carrito-vacio span {
+  font-size: 1.8rem;
 }
 
 /* FOOTER///////////////////// */
