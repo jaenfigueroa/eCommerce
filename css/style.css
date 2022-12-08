@@ -259,8 +259,9 @@ body {
   flex-direction: column;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header .nombre {
-  font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 20px;
   text-transform: capitalize;
 }
 .main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__header .precio-unitario {
