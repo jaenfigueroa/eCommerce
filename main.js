@@ -155,19 +155,19 @@ function calcularTotal() {
   let subtotal = 0
 
   precios.forEach((x) => {
-    console.log(Number(x.textContent))
+    // console.log(Number(x.textContent))
 
     subtotal += Number(x.textContent)
   })
 
-  console.log('subtotal', subtotal)
+  // console.log('subtotal', subtotal)
 
   //tax
   let tax = subtotal * 0.0975
-  console.log('tax', tax)
+  // console.log('tax', tax)
   //total
   let total = subtotal + tax
-  console.log('total', total)
+  // console.log('total', total)
 
   document.getElementById('subtotal').textContent = subtotal.toFixed(2)
   document.getElementById('tax').textContent = tax.toFixed(2)
@@ -208,7 +208,7 @@ function renderizarElementos() {
 renderizarElementos()
 ///////////////////////////////////////////////////
 function modificarCantidad(id, accion) {
-  console.log(`se ${accion} el elemento ${id}`)
+  // console.log(`se ${accion} el elemento ${id}`)
 
   ///////////////////////////////////////////////////
   const contenedor = document.getElementById('contenedor-elementos')
@@ -232,7 +232,7 @@ function modificarCantidad(id, accion) {
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 function agregarAlCarrito(id) {
-  console.log(`el elemento ${id}, se agrego del carrito`)
+  // console.log(`el elemento ${id}, se agrego del carrito`)
 
   document.getElementById(`boton-add-${id}`).style.display = 'none'
   document.getElementById(`boton-quit-${id}`).style.display = 'flex'
@@ -255,7 +255,7 @@ function agregarAlCarrito(id) {
 }
 
 function quitarDelCarrito(id) {
-  console.log(`el elemento ${id}, se quito del carrito`)
+  // console.log(`el elemento ${id}, se quito del carrito`)
 
   document.getElementById(`boton-add-${id}`).style.display = 'initial'
   document.getElementById(`boton-quit-${id}`).style.display = 'none'
@@ -269,8 +269,8 @@ function quitarDelCarrito(id) {
 
   actualizarCarrito() /* PROVISIONAL */
 
-  console.log(carrito)
-  console.log('longitud del carrito: ', carrito.length)
+  // console.log(carrito)
+  // console.log('longitud del carrito: ', carrito.length)
 
   //ocultar la tabla de subtotal, tax, y total, si el carrito esta en 0
   if (carrito.length === 0) {
