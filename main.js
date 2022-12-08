@@ -168,21 +168,22 @@ function calcularTotal() {
 // calcularTotal()
 
 //RENDERIZAR LOS ELEMENTOS DEL CARRITO/////////////////////////
-let carrito = [
-  {
-    id: 6,
-    cantidad: 4
-  },
-  {
-    id: 2,
-    cantidad: 3
-  },
-  {
-    id: 4,
-    cantidad: 2
-  }
-]
+// let carrito = [
+//   {
+//     id: 6,
+//     cantidad: 4
+//   },
+//   {
+//     id: 2,
+//     cantidad: 3
+//   },
+//   {
+//     id: 4,
+//     cantidad: 2
+//   }
+// ]
 
+let carrito = []
 ///////////////////////////////////////////////////
 function renderizarElementos() {
   carrito.forEach((elemento) => {
@@ -226,6 +227,18 @@ function agregarAlCarrito(id) {
 
   document.getElementById(`boton-add-${id}`).style.display = 'none'
   document.getElementById(`boton-quit-${id}`).style.display = 'flex'
+
+  /////////////////////////EN TEORIA DEBERIA FUNCIONAR
+  let test = verificarExistencia(id)
+
+  if (!test) {
+    carrito.push({
+      id: id,
+      cantidad: 1
+    })
+  }
+
+  actualizarCarrito() /* PROVISIONAL */
 }
 
 function quitarDelCarrito(id) {
@@ -233,4 +246,32 @@ function quitarDelCarrito(id) {
 
   document.getElementById(`boton-add-${id}`).style.display = 'initial'
   document.getElementById(`boton-quit-${id}`).style.display = 'none'
+
+  ///////////////////////// EN TEORIA DEBERIA FUNCIONAR
+  let test = verificarExistencia(id)
+
+  if (test) {
+    carrito = carrito.filter((x) => x.id !== id)
+  }
+
+  actualizarCarrito() /* PROVISIONAL */
+}
+
+//IR AL CARRITO///////////////////////
+function actualizarCarrito() {
+  //eliminar elementos existentes
+  const contenedor = document.getElementById('contenedor-elementos')
+  let elementos = document.querySelectorAll('.elemento')
+
+  elementos.forEach((x) => {
+    contenedor.removeChild(x)
+  })
+
+  //rendrerizar los elementos actualizados
+  renderizarElementos()
+}
+
+//////////////////////////EN TEORIA DEBERIA FUNCIONAR
+function verificarExistencia(id) {
+  return carrito.some((x) => x.id === id)
 }
