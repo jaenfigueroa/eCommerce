@@ -217,8 +217,6 @@ body {
         }
 
         &__boton {
-          background-color: #6b00f5;
-          color: white;
           border: none;
           font-size: 1.8rem;
           font-weight: 600;
@@ -226,10 +224,54 @@ body {
           border-radius: 1.5rem;
           width: max-content;
           transition: 0.3s;
+          background-color: #6b00f5;
+          color: white;
+          display: flex;
+          gap: 1rem;
 
           &:hover {
             background-color: #5900ce;
             transform: scaleX(1.15) scaleY(1.15);
+          }
+
+          /* SELECCIONADO/////////////// */
+          &--seleccionado {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            display: none;
+
+            &:hover {
+              background-color: black;
+
+              div {
+                background-image: url(../img/assets/icons/delete.svg);
+              }
+              span {
+                font-size: 1.8rem;
+                &::after {
+                  content: 'Quit cart';
+                }
+              }
+            }
+
+            div {
+              width: 2rem;
+              height: 2rem;
+              background-image: url(../img/assets/icons/check.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            span {
+              font-size: 1.8rem;
+              &::after {
+                content: 'In cart';
+              }
+            }
           }
         }
       }
@@ -494,4 +536,9 @@ body {
       display: initial !important;
     }
   }
+}
+
+/* ////////////////// */
+.desactivado {
+  display: none !important;
 }

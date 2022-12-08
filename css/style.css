@@ -188,8 +188,6 @@ body {
   content: "$";
 }
 .main .seccion1__contenedor-platos .plato__boton {
-  background-color: #6b00f5;
-  color: white;
   border: none;
   font-size: 1.8rem;
   font-weight: 600;
@@ -197,10 +195,49 @@ body {
   border-radius: 1.5rem;
   width: max-content;
   transition: 0.3s;
+  background-color: #6b00f5;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  /* SELECCIONADO/////////////// */
 }
 .main .seccion1__contenedor-platos .plato__boton:hover {
   background-color: #5900ce;
   transform: scaleX(1.15) scaleY(1.15);
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  display: none;
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado:hover {
+  background-color: black;
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado:hover div {
+  background-image: url(../img/assets/icons/delete.svg);
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado:hover span {
+  font-size: 1.8rem;
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado:hover span::after {
+  content: "Quit cart";
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado div {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/assets/icons/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado span {
+  font-size: 1.8rem;
+}
+.main .seccion1__contenedor-platos .plato__boton--seleccionado span::after {
+  content: "In cart";
 }
 .main .seccion2 {
   display: none;
@@ -405,6 +442,10 @@ body {
   .main .seccion2 {
     display: initial !important;
   }
+}
+/* ////////////////// */
+.desactivado {
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

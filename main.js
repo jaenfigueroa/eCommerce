@@ -67,7 +67,7 @@ const platos = [
 ]
 
 /////////////////////////////////////////
-/////////////////////////////////////////
+//CREAR ELEMENTOS DE LA LISTA DE PLATOS/////////////////////
 function crearPlato(id = 0) {
   let nombre = platos[id].nombre
   let precio = platos[id].precio
@@ -101,16 +101,7 @@ function agregar(id) {
   console.log(`El plato numero ${id}, fue agregado la carrito`)
 }
 
-//SECCION 2///////////////////////////////
-// let carrito = [
-//   {
-//     plato: 1,
-//     nombre: platos[1].nombre,
-//     precio: platos[1].precio,
-//     cantidad: 3
-//   }
-// ]
-/////////////////////////////////////////////////
+///SECCION 2 - CREAR ELEMENTOS EN EL CARRITO/////////////////////////
 function crearElemento(id = 0, cantidad = 0) {
   let imagen = platos[id].imagen
   let nombre = platos[id].nombre
@@ -130,22 +121,25 @@ function crearElemento(id = 0, cantidad = 0) {
   clon.querySelector('.cantidad-elementos-plato').textContent = cantidad
   clon.querySelector('.precio-final').textContent = (precioUnitario * cantidad).toFixed(2)
 
+  clon.querySelector('.disminuir-cantidad').onclick = () => modificarCantidad(id, 'menos')
+  clon.querySelector('.aumentar-cantidad').onclick = () => modificarCantidad(id, 'mas')
+
   fragmento.appendChild(clon)
   contenedor.append(fragmento)
 }
 /////////////////////////////////////////////////
-crearElemento(0, 5)
-crearElemento(1, 3)
-crearElemento(5, 10)
+// crearElemento(0, 5)
+// crearElemento(1, 3)
+// crearElemento(5, 10)
 
-/////////////////////////////////////////////////
+//CALCULAR Y MOSTRAR SUBTOTAL, TAX, TOTAL ///////////////////////
 function calcularTotal() {
   let precios = document.querySelectorAll('.precio-final')
 
   //subtotal
   let subtotal = 0
 
-  precios.forEach(x => {
+  precios.forEach((x) => {
     console.log(Number(x.textContent))
 
     subtotal += Number(x.textContent)
@@ -165,6 +159,56 @@ function calcularTotal() {
   document.getElementById('total').textContent = total.toFixed(2)
 }
 /////////////////////////////////////////////////
-calcularTotal()
+// calcularTotal()
 
-/////////////////////////////////////////////////
+//RENDERIZAR LOS ELEMENTOS DEL CARRITO/////////////////////////
+let carrito = [
+  {
+    id: 6,
+    cantidad: 4
+  },
+  {
+    id: 2,
+    cantidad: 3
+  },
+  {
+    id: 4,
+    cantidad: 2
+  }
+]
+
+///////////////////////////////////////////////////
+function renderizarElementos() {
+  carrito.forEach((elemento) => {
+    let id = elemento.id
+    let cantidad = elemento.cantidad
+
+    crearElemento(id, cantidad)
+    calcularTotal()
+  })
+}
+
+///////////////////////////////////////////////////
+renderizarElementos()
+///////////////////////////////////////////////////
+function modificarCantidad(id, accion) {
+  console.log(`se ${accion} el elemento ${id}`)
+
+  ///////////////////////////////////////////////////
+  const contenedor = document.getElementById('contenedor-elementos')
+  let elementos = document.querySelectorAll('.elemento')
+
+  elementos.forEach((x) => {
+    contenedor.removeChild(x)
+  })
+  ///////////////////////////////////////////////////
+
+  carrito.forEach((x) => {
+    if (x.id === id) {
+      if (accion === 'mas') x.cantidad++
+      if (accion === 'menos' && x.cantidad > 0) x.cantidad--
+    }
+  })
+
+  renderizarElementos()
+}
