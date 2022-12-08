@@ -82,7 +82,6 @@ function crearPlato(id = 0) {
   clon.querySelector('.plato__imagen').style.backgroundImage = `url(${imagen})`
   clon.querySelector('.plato__nombre').textContent = nombre
   clon.querySelector('.plato__precio').textContent = precio
-  // clon.querySelector('.plato__boton').onclick = () => agregar(id)
 
   clon.querySelector(`.boton-agregar`).onclick = () => agregarAlCarrito(id)
   clon.querySelector(`.boton-quitar`).onclick = () => quitarDelCarrito(id)
@@ -107,14 +106,7 @@ function renderizarListaPlatos() {
 }
 
 renderizarListaPlatos()
-/////////////////////////////////////////
-/////////////////////////////////////////
-
-/////////////////////////////////////////
-// function agregar(id) {
-//   /* INNESARIO ???? CREO QUE SI*/
-//   console.log(`El plato numero ${id}, fue agregado la carrito`)
-// }
+/////////////////////////////////////////////////////////////////////
 
 ///SECCION 2 - CREAR ELEMENTOS EN EL CARRITO/////////////////////////
 function crearElemento(id = 0, cantidad = 0) {
@@ -173,8 +165,6 @@ function calcularTotal() {
   document.getElementById('tax').textContent = tax.toFixed(2)
   document.getElementById('total').textContent = total.toFixed(2)
 }
-/////////////////////////////////////////////////
-// calcularTotal()
 
 //RENDERIZAR LOS ELEMENTOS DEL CARRITO/////////////////////////
 // let carrito = [
@@ -186,10 +176,6 @@ function calcularTotal() {
 //     id: 2,
 //     cantidad: 3
 //   },
-//   {
-//     id: 4,
-//     cantidad: 2
-//   }
 // ]
 
 let carrito = []
@@ -237,7 +223,7 @@ function agregarAlCarrito(id) {
   document.getElementById(`boton-add-${id}`).style.display = 'none'
   document.getElementById(`boton-quit-${id}`).style.display = 'flex'
 
-  /////////////////////////EN TEORIA DEBERIA FUNCIONAR
+  /////////////////////////
   let test = verificarExistencia(id)
 
   if (!test) {
@@ -260,7 +246,7 @@ function quitarDelCarrito(id) {
   document.getElementById(`boton-add-${id}`).style.display = 'initial'
   document.getElementById(`boton-quit-${id}`).style.display = 'none'
 
-  ///////////////////////// EN TEORIA DEBERIA FUNCIONAR
+  /////////////////////////
   let test = verificarExistencia(id)
 
   if (test) {
@@ -289,10 +275,10 @@ function actualizarCarrito() {
     contenedor.removeChild(x)
   })
 
-  //rendrerizar los elementos actualizados
+  //renderizar los elementos actualizados
   renderizarElementos()
 
-  //////////////// actualizat numero del pop rojo del carrito
+  //////////////// actualizar numero del pop rojo del carrito
   actualizarPopCarrito(carrito.length)
 }
 
