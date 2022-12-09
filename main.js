@@ -354,27 +354,27 @@ function obtenerDatosLocalStorage() {
   return carritoObtenido
 }
 
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
+/* obtener el carrito del local storage */
+obtenerDatosLocalStorage()
+
+/* renderizar los platos en la lista de carrito y actualizar los precios*/
+renderizarElementos()
+
+/* actualizar el pop - numero en el carrito */
+actualizarPopCarrito()
+
+/* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
+comprobarCarritoVacio()
+
+/* renderizar la lista de los platos , por primera vez */
+renderizarListaPlatos()
+
 window.addEventListener('load', () => {
-  // console.log('se termino de cargar la pagina')
+  // console.log('se termino de cargar toda la pagina!')
 
-  /* obtener el carrito del local storage */
-  obtenerDatosLocalStorage()
-
-  /* renderizar los paltos en la lista de carrito y actualizar los precios*/
-  renderizarElementos()
-
-  /* actualizar el pop - numero en el carrito */
-  actualizarPopCarrito()
-
-  /* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
-  comprobarCarritoVacio()
-
-  /* renderizar la lista de los platos , por primera vez */
-  renderizarListaPlatos()
-
-  ///////////////////////////////////////////////////
-  ///TAREAS
-  // - renderizar la lista del carrito ✔
-  // - actualizar el nuemero del pop del carrito ✔
-  // - renderizar los platos, verificando si esta agregado o no al carrito ✔
+  document.getElementById('body').classList.remove('hidden')
+  document.getElementById('pantalla-carga').style.display = 'none'
 })
