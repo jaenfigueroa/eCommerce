@@ -498,14 +498,14 @@ body {
   }
 }
 @media (min-width: 868px) {
-  .seccion__header i {
-    display: none;
-  }
   .main .seccion1 {
     display: initial !important;
   }
   .main .seccion2 {
     display: initial !important;
+  }
+  .main .seccion2 i {
+    display: none;
   }
 }
 /* ////////////////// */
