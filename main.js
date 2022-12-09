@@ -360,7 +360,7 @@ function obtenerDatosLocalStorage() {
 /* obtener el carrito del local storage */
 obtenerDatosLocalStorage()
 
-/* renderizar los paltos en la lista de carrito y actualizar los precios*/
+/* renderizar los platos en la lista de carrito y actualizar los precios*/
 renderizarElementos()
 
 /* actualizar el pop - numero en el carrito */
