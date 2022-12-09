@@ -92,7 +92,7 @@ function crearPlato(id = 0) {
   //comporbar existencia del platp en el carrito y elegir el boton correcto/////////
   let test = comprobarPlatoEnCarrito(id)
 
-  console.log(test)
+  // console.log(test)
 
   if (test) {
     clon.querySelector(`.boton-agregar`).style.display = 'none'
@@ -337,17 +337,17 @@ function actualizarPopCarrito() {
 
 ////////////////////////////
 function guardarEnLocalStorage() {
-  console.log('se GUARDO el carrito en local storage')
+  // console.log('se GUARDO el carrito en local storage')
 
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 function obtenerDatosLocalStorage() {
-  console.log('se OBTUVO el carrito guardado del local storage')
+  // console.log('se OBTUVO el carrito guardado del local storage')
 
   let carritoObtenido = JSON.parse(localStorage.getItem('carrito')) || []
 
-  console.log(carritoObtenido)
+  // console.log(carritoObtenido)
   //asignar este carrito al carrito actual
   carrito = carritoObtenido
 
@@ -355,7 +355,7 @@ function obtenerDatosLocalStorage() {
 }
 
 window.addEventListener('load', () => {
-  console.log('se termino de cargar la pagina')
+  // console.log('se termino de cargar la pagina')
 
   /* obtener el carrito del local storage */
   obtenerDatosLocalStorage()
