@@ -373,7 +373,7 @@ comprobarCarritoVacio()
 renderizarListaPlatos()
 
 window.addEventListener('load', () => {
-  // console.log('se termino de cargar toda la pagina!')
+  console.log('se termino de cargar toda la pagina!')
 
   document.getElementById('body').classList.remove('hidden')
   document.getElementById('pantalla-carga').style.display = 'none'
