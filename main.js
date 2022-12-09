@@ -384,5 +384,5 @@ window.addEventListener('load', () => {
 window.onload = () => {
   console.log('se termino de cargar la pagina')
   document.getElementById('body').classList.remove('hidden')
-  document.getElementById('pantalla-carga').style.display = 'none'
+  // document.getElementById('pantalla-carga').style.display = 'none'
 }
