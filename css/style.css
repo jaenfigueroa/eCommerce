@@ -377,7 +377,7 @@ body {
   width: 110px;
   justify-content: space-between;
 }
-.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav .boton {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -389,14 +389,14 @@ body {
   background-repeat: no-repeat;
   transition: 0.3s;
 }
-.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:last-child {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav .boton:last-child {
   transform: rotateZ(180deg);
 }
-.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:last-child:hover {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav .boton:last-child:hover {
   background-color: #620dd0;
   transform: scaleX(1.15) scaleY(1.15) rotateZ(180deg);
 }
-.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav button:hover {
+.main .seccion2 .contenedor-elementos .elemento__contenedor .elemento__main .main__nav .boton:hover {
   background-color: #620dd0;
   transform: scaleX(1.15) scaleY(1.15);
 }

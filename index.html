@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- js -->
     <script src="main.js" defer></script>
+    <!-- iconos font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- fuentes de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
-    <!-- iconos font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 
   <body class="hidden" id="body">
@@ -57,11 +57,11 @@
               <div class="plato__contenedor">
                 <h3 class="plato__nombre">French Fries with Ketchup</h3>
                 <p class="plato__precio">$2.23</p>
-                <button class="plato__boton boton-agregar">Add to cart</button>
-                <button class="plato__boton boton-quitar plato__boton--seleccionado ">
+                <div class="plato__boton boton-agregar">Add to cart</div>
+                <div class="plato__boton boton-quitar plato__boton--seleccionado ">
                   <div></div>
                   <span></span>
-                </button>
+                </div>
               </div>
             </article>
           </template>
@@ -100,9 +100,9 @@
                 <!-- main -->
                 <main class="elemento__main">
                   <nav class="main__nav">
-                    <button class="disminuir-cantidad"></button>
+                    <div class="boton disminuir-cantidad"></div>
                     <span class="cantidad-elementos">0</span>
-                    <button class="aumentar-cantidad"></button>
+                    <div class="boton aumentar-cantidad"></div>
                   </nav>
                   <p class="precio-final">0</p>
                 </main>
