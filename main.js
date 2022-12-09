@@ -89,10 +89,38 @@ function crearPlato(id = 0) {
   clon.querySelector(`.boton-agregar`).id = `boton-add-${id}`
   clon.querySelector(`.boton-quitar`).id = `boton-quit-${id}`
 
+  //comporbar existencia del platp en el carrito y elegir el boton correcto/////////
+  let test = comprobarPlatoEnCarrito(id)
+
+  console.log(test)
+
+  if (test) {
+    clon.querySelector(`.boton-agregar`).style.display = 'none'
+    clon.querySelector(`.boton-quitar`).style.display = 'flex'
+  } else {
+    clon.querySelector(`.boton-agregar`).style.display = 'initial'
+    clon.querySelector(`.boton-quitar`).style.display = 'none'
+  }
+  //////////////////////////////////////////////////////////////////////////
+
   fragmento.appendChild(clon)
   contenedor.append(fragmento)
 }
 
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////EN TEORIA DEBERI FUNCIONAR
+function comprobarPlatoEnCarrito(idBuscado) {
+  // console.log(carrito)
+  // console.log(carrito.length)
+
+  if (carrito.length > 0) {
+    return carrito.some((x) => x.id === idBuscado)
+  } else {
+    return false
+  }
+}
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 // crearPlato(0)
 // crearPlato(1)
 // crearPlato(5)
@@ -105,7 +133,7 @@ function renderizarListaPlatos() {
   })
 }
 
-renderizarListaPlatos()
+// renderizarListaPlatos()
 /////////////////////////////////////////////////////////////////////
 
 ///SECCION 2 - CREAR ELEMENTOS EN EL CARRITO/////////////////////////
@@ -213,6 +241,8 @@ function modificarCantidad(id, accion) {
   })
 
   renderizarElementos()
+
+  guardarEnLocalStorage() /* PROVISIONAL */
 }
 
 ///////////////////////////////////////////////////
@@ -259,12 +289,23 @@ function quitarDelCarrito(id) {
   // console.log('longitud del carrito: ', carrito.length)
 
   //ocultar la tabla de subtotal, tax, y total, si el carrito esta en 0
+  // if (carrito.length === 0) {
+  //   document.getElementById('contenedor-resultados').style.display = 'none'
+  //   document.getElementById('aviso-carrito-vacio').style.display = 'initial'
+  // }
+
+  comprobarCarritoVacio()
+}
+
+function comprobarCarritoVacio() {
   if (carrito.length === 0) {
     document.getElementById('contenedor-resultados').style.display = 'none'
     document.getElementById('aviso-carrito-vacio').style.display = 'initial'
+  } else {
+    document.getElementById('contenedor-resultados').style.display = 'flex'
+    document.getElementById('aviso-carrito-vacio').style.display = 'none'
   }
 }
-
 //IR AL CARRITO///////////////////////
 function actualizarCarrito() {
   //eliminar elementos existentes
@@ -279,7 +320,10 @@ function actualizarCarrito() {
   renderizarElementos()
 
   //////////////// actualizar numero del pop rojo del carrito
-  actualizarPopCarrito(carrito.length)
+  actualizarPopCarrito()
+
+  /* PROVISIONAL */
+  guardarEnLocalStorage()
 }
 
 //////////////////////////
@@ -287,6 +331,50 @@ function verificarExistencia(id) {
   return carrito.some((x) => x.id === id)
 }
 ////////////////////////
-function actualizarPopCarrito(cantidad) {
-  document.getElementById('popCarrito').textContent = cantidad
+function actualizarPopCarrito() {
+  document.getElementById('popCarrito').textContent = carrito.length
 }
+
+////////////////////////////
+function guardarEnLocalStorage() {
+  console.log('se GUARDO el carrito en local storage')
+
+  localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+
+function obtenerDatosLocalStorage() {
+  console.log('se OBTUVO el carrito guardado del local storage')
+
+  let carritoObtenido = JSON.parse(localStorage.getItem('carrito')) || []
+
+  console.log(carritoObtenido)
+  //asignar este carrito al carrito actual
+  carrito = carritoObtenido
+
+  return carritoObtenido
+}
+
+window.addEventListener('load', () => {
+  console.log('se termino de cargar la pagina')
+
+  /* obtener el carrito del local storage */
+  obtenerDatosLocalStorage()
+
+  /* renderizar los paltos en la lista de carrito y actualizar los precios*/
+  renderizarElementos()
+
+  /* actualizar el pop - numero en el carrito */
+  actualizarPopCarrito()
+
+  /* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
+  comprobarCarritoVacio()
+
+  /* renderizar la lista de los platos , por primera vez */
+  renderizarListaPlatos()
+
+  ///////////////////////////////////////////////////
+  ///TAREAS
+  // - renderizar la lista del carrito ✔
+  // - actualizar el nuemero del pop del carrito ✔
+  // - renderizar los platos, verificando si esta agregado o no al carrito ✔
+})
