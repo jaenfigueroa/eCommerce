@@ -38,7 +38,7 @@ body {
 }
 
 .contenedor-carga {
-  background-color: red;
+  background-color: #e8e9ee;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -60,7 +60,7 @@ body {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #fff;
+  background: #6b00f5;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 

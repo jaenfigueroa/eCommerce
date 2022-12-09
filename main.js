@@ -354,47 +354,27 @@ function obtenerDatosLocalStorage() {
   return carritoObtenido
 }
 
-// window.addEventListener('load', () => {
-//   // console.log('se termino de cargar la pagina')
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
 
-//   /* obtener el carrito del local storage */
-//   obtenerDatosLocalStorage()
-
-//   /* renderizar los paltos en la lista de carrito y actualizar los precios*/
-//   renderizarElementos()
-
-//   /* actualizar el pop - numero en el carrito */
-//   actualizarPopCarrito()
-
-//   /* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
-//   comprobarCarritoVacio()
-
-//   /* renderizar la lista de los platos , por primera vez */
-//   renderizarListaPlatos()
-
-//   ///////////////////////////////////////////////////
-//   ///TAREAS
-//   // - renderizar la lista del carrito ✔
-//   // - actualizar el nuemero del pop del carrito ✔
-//   // - renderizar los platos, verificando si esta agregado o no al carrito ✔
-// })
-
-///////////////////////////////////////
-///////////////////////////////////////
-// window.onload = () => {
-//   console.log('se termino de cargar la pagina')
-//   document.getElementById('body').classList.remove('hidden')
-//   // document.getElementById('pantalla-carga').style.display = 'none'
-// }
-
+/* obtener el carrito del local storage */
 obtenerDatosLocalStorage()
+
+/* renderizar los paltos en la lista de carrito y actualizar los precios*/
 renderizarElementos()
+
+/* actualizar el pop - numero en el carrito */
 actualizarPopCarrito()
+
+/* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
 comprobarCarritoVacio()
+
+/* renderizar la lista de los platos , por primera vez */
 renderizarListaPlatos()
 
 window.addEventListener('load', () => {
-  console.log('se termino de cargar la pagina 3')
+  // console.log('se termino de cargar toda la pagina!')
+
   document.getElementById('body').classList.remove('hidden')
-  document.getElementById('pantalla-carga').style.display = 'none'
+  // document.getElementById('pantalla-carga').style.display = 'none'
 })
