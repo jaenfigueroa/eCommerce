@@ -112,7 +112,7 @@ function crearPlato(id = 0) {
 }
 
 ///////////////////////////////////////////////////
-///////////////////////////////////////////////////EN TEORIA DEBERI FUNCIONAR
+///////////////////////////////////////////////////
 function comprobarPlatoEnCarrito(idBuscado) {
   // console.log(carrito)
   // console.log(carrito.length)
@@ -226,8 +226,7 @@ function renderizarElementos() {
 renderizarElementos()
 ///////////////////////////////////////////////////
 function modificarCantidad(id, accion) {
-  sonidoCambiar() /* PROVISIONAL */
-  // console.log(`se ${accion} el elemento ${id}`)
+  sonidoCambiar()
 
   ///////////////////////////////////////////////////
   const contenedor = document.getElementById('contenedor-elementos')
@@ -247,15 +246,13 @@ function modificarCantidad(id, accion) {
 
   renderizarElementos()
 
-  guardarEnLocalStorage() /* PROVISIONAL */
+  guardarEnLocalStorage()
 }
 
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 function agregarAlCarrito(id) {
-  sonidoAgregar() /* PROVISIONAL */
-
-  // console.log(`el elemento ${id}, se agrego del carrito`)
+  sonidoAgregar()
 
   document.getElementById(`boton-add-${id}`).style.display = 'none'
   document.getElementById(`boton-quit-${id}`).style.display = 'flex'
@@ -270,7 +267,7 @@ function agregarAlCarrito(id) {
     })
   }
 
-  actualizarCarrito() /* PROVISIONAL */
+  actualizarCarrito()
 
   //mostrar la tablar de subtotal, tax, y total
   document.getElementById('contenedor-resultados').style.display = 'flex'
@@ -278,7 +275,7 @@ function agregarAlCarrito(id) {
 }
 
 function quitarDelCarrito(id) {
-  sonidoQuitar() /* PROVISIONAL */
+  sonidoQuitar()
 
   // console.log(`el elemento ${id}, se quito del carrito`)
 
@@ -292,16 +289,7 @@ function quitarDelCarrito(id) {
     carrito = carrito.filter((x) => x.id !== id)
   }
 
-  actualizarCarrito() /* PROVISIONAL */
-
-  // console.log(carrito)
-  // console.log('longitud del carrito: ', carrito.length)
-
-  //ocultar la tabla de subtotal, tax, y total, si el carrito esta en 0
-  // if (carrito.length === 0) {
-  //   document.getElementById('contenedor-resultados').style.display = 'none'
-  //   document.getElementById('aviso-carrito-vacio').style.display = 'initial'
-  // }
+  actualizarCarrito()
 
   comprobarCarritoVacio()
 }
@@ -331,7 +319,6 @@ function actualizarCarrito() {
   //////////////// actualizar numero del pop rojo del carrito
   actualizarPopCarrito()
 
-  /* PROVISIONAL */
   guardarEnLocalStorage()
 }
 
@@ -356,8 +343,6 @@ function obtenerDatosLocalStorage() {
 
   let carritoObtenido = JSON.parse(localStorage.getItem('carrito')) || []
 
-  // console.log(carritoObtenido)
-  //asignar este carrito al carrito actual
   carrito = carritoObtenido
 
   return carritoObtenido
