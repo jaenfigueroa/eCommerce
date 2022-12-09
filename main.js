@@ -356,22 +356,16 @@ function obtenerDatosLocalStorage() {
 
 window.addEventListener('load', () => {
   // console.log('se termino de cargar la pagina')
-
-  /* obtener el carrito del local storage */
-  obtenerDatosLocalStorage()
-
-  /* renderizar los paltos en la lista de carrito y actualizar los precios*/
-  renderizarElementos()
-
-  /* actualizar el pop - numero en el carrito */
-  actualizarPopCarrito()
-
-  /* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
-  comprobarCarritoVacio()
-
-  /* renderizar la lista de los platos , por primera vez */
-  renderizarListaPlatos()
-
+  // /* obtener el carrito del local storage */
+  // obtenerDatosLocalStorage()
+  // /* renderizar los paltos en la lista de carrito y actualizar los precios*/
+  // renderizarElementos()
+  // /* actualizar el pop - numero en el carrito */
+  // actualizarPopCarrito()
+  // /* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
+  // comprobarCarritoVacio()
+  // /* renderizar la lista de los platos , por primera vez */
+  // renderizarListaPlatos()
   ///////////////////////////////////////////////////
   ///TAREAS
   // - renderizar la lista del carrito ✔
@@ -386,6 +380,21 @@ window.addEventListener('load', () => {
 //   document.getElementById('body').classList.remove('hidden')
 //   // document.getElementById('pantalla-carga').style.display = 'none'
 // }
+
+/* obtener el carrito del local storage */
+obtenerDatosLocalStorage()
+
+/* renderizar los paltos en la lista de carrito y actualizar los precios*/
+renderizarElementos()
+
+/* actualizar el pop - numero en el carrito */
+actualizarPopCarrito()
+
+/* comprobar el carito vacio - ocultar/mostrar el aviso de carrito vacio */
+comprobarCarritoVacio()
+
+/* renderizar la lista de los platos , por primera vez */
+renderizarListaPlatos()
 
 window.addEventListener('load', () => {
   console.log('se termino de cargar la pagina 2')
