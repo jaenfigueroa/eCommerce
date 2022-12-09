@@ -381,8 +381,13 @@ window.addEventListener('load', () => {
 
 ///////////////////////////////////////
 ///////////////////////////////////////
-window.onload = () => {
-  console.log('se termino de cargar la pagina')
+// window.onload = () => {
+//   console.log('se termino de cargar la pagina')
+//   document.getElementById('body').classList.remove('hidden')
+//   // document.getElementById('pantalla-carga').style.display = 'none'
+// }
+
+window.addEventListener('load', () => {
+  console.log('se termino de cargar la pagina 2')
   document.getElementById('body').classList.remove('hidden')
-  // document.getElementById('pantalla-carga').style.display = 'none'
-}
+})
