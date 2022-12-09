@@ -396,4 +396,5 @@ renderizarListaPlatos()
 window.addEventListener('load', () => {
   console.log('se termino de cargar la pagina 3')
   document.getElementById('body').classList.remove('hidden')
+  document.getElementById('pantalla-carga').style.display = 'none'
 })
