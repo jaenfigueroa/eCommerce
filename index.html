@@ -24,13 +24,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 
-  <body>
+  <body class="hidden" id="body">
     <!-- contenedor fondos -->
     <div class="contenedor-fondos">
       <div class="pieza"></div>
       <div class="pieza"></div>
       <div class="pieza"></div>
     </div>
+    <!-- icon loader -->
+    <div class="contenedor-carga" id="pantalla-carga">
+      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
     <!-- MAIN -->
     <main class="main">
       <!-- SECCION 1 - LISTA DE PLATOSl-->

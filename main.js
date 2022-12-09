@@ -378,3 +378,11 @@ window.addEventListener('load', () => {
   // - actualizar el nuemero del pop del carrito ✔
   // - renderizar los platos, verificando si esta agregado o no al carrito ✔
 })
+
+///////////////////////////////////////
+///////////////////////////////////////
+window.onload = () => {
+  console.log('se termino de cargar la pagina')
+  document.getElementById('body').classList.remove('hidden')
+  document.getElementById('pantalla-carga').style.display = 'none'
+}
