@@ -481,7 +481,7 @@ body {
 }
 
 /* ///////////////////////////////////////////////////////////////// */
-@media (min-width: 43rem) {
+@media (min-width: 430px) {
   .contenedor-fondos {
     display: inherit;
   }
@@ -497,7 +497,7 @@ body {
     background-color: transparent;
   }
 }
-@media (min-width: 86.8rem) {
+@media (min-width: 868px) {
   .main .seccion1 {
     display: initial !important;
   }

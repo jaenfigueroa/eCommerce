@@ -567,7 +567,7 @@ body {
   }
 }
 /* ///////////////////////////////////////////////////////////////// */
-@media (min-width: 43rem) {
+@media (min-width: 430px) {
   .contenedor-fondos {
     display: inherit;
   }
@@ -585,16 +585,7 @@ body {
   }
 }
 
-@media (min-width: 86.8rem) {
-  .seccion {
-    &__header {
-      i {
-        // display: none;
-        // background-color: bisque;
-      }
-    }
-  }
-
+@media (min-width: 868px) {
   .main {
     .seccion1 {
       display: initial !important;
