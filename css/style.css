@@ -513,4 +513,8 @@ body {
   display: none !important;
 }
 
+.contenedor-audios {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

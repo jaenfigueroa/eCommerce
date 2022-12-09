@@ -6,11 +6,15 @@ const seccion2 = document.getElementById('seccion-2')
 /////////////////////////////////////////
 
 botonIrCarrito.addEventListener('click', () => {
+  sonidoCambiar()
+
   seccion1.style.display = 'none'
   seccion2.style.display = 'initial'
 })
 
 botonVolverMenu.addEventListener('click', () => {
+  sonidoCambiar()
+
   seccion1.style.display = 'initial'
   seccion2.style.display = 'none'
 })
@@ -222,6 +226,7 @@ function renderizarElementos() {
 renderizarElementos()
 ///////////////////////////////////////////////////
 function modificarCantidad(id, accion) {
+  sonidoCambiar() /* PROVISIONAL */
   // console.log(`se ${accion} el elemento ${id}`)
 
   ///////////////////////////////////////////////////
@@ -248,6 +253,8 @@ function modificarCantidad(id, accion) {
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 function agregarAlCarrito(id) {
+  sonidoAgregar() /* PROVISIONAL */
+
   // console.log(`el elemento ${id}, se agrego del carrito`)
 
   document.getElementById(`boton-add-${id}`).style.display = 'none'
@@ -271,6 +278,8 @@ function agregarAlCarrito(id) {
 }
 
 function quitarDelCarrito(id) {
+  sonidoQuitar() /* PROVISIONAL */
+
   // console.log(`el elemento ${id}, se quito del carrito`)
 
   document.getElementById(`boton-add-${id}`).style.display = 'initial'
@@ -378,3 +387,18 @@ window.addEventListener('load', () => {
   document.getElementById('body').classList.remove('hidden')
   document.getElementById('pantalla-carga').style.display = 'none'
 })
+
+function sonidoAgregar() {
+  document.getElementById('audio-agregar1').play()
+}
+
+// sonidoAgregar()
+
+function sonidoQuitar() {
+  document.getElementById('audio-quitar2').play()
+}
+
+function sonidoCambiar() {
+  document.getElementById('audio-cambiar').play()
+}
+// sonidoQuitar()
