@@ -50,17 +50,17 @@ body {
 .lds-ring {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
 }
 .lds-ring div {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid white;
+  width: 6.4rem;
+  height: 6.4rem;
+  margin: 0.8rem;
+  border: 0.8rem solid white;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #6b00f5 transparent transparent transparent;
@@ -90,35 +90,35 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    // border: 1px solid black;
+    // border: 0.1rem solid black;
     z-index: -1;
   }
   .pieza:nth-child(1) {
     background-image: url(../img/assets/icons/bg__top-right.svg);
     top: 0;
     right: 0;
-    width: 450px;
-    height: 300px;
+    width: 45rem;
+    height: 30rem;
     background-position: top right;
-    background-size: 500px;
+    background-size: 50rem;
   }
   .pieza:nth-child(2) {
     background-image: url(../img/assets/icons/bg__left.svg);
     left: 0;
-    top: calc(50% - 300px);
+    top: calc(50% - 30rem);
     background-position: left;
-    width: 260px;
-    height: 600px;
-    background-size: 250px;
+    width: 26rem;
+    height: 60rem;
+    background-size: 25rem;
   }
   .pieza:nth-child(3) {
     background-image: url(../img/assets/icons/bg__btm-right.svg);
     bottom: 0;
     right: 0;
     background-position: right bottom;
-    width: 440px;
-    height: 500px;
-    background-size: 500px;
+    width: 44rem;
+    height: 50rem;
+    background-size: 50rem;
   }
 }
 /* MAIN///////////////////// */
@@ -137,15 +137,15 @@ body {
     // background-color: greenyellow;
     background-color: white;
     width: 100%;
-    max-width: 400px;
+    max-width: 40rem;
 
-    // border: 2px solid black;
+    // border: 0.2rem solid black;
     overflow: hidden;
 
-    // min-height: 600px;
+    // min-height: 60rem;
     height: max-content;
 
-    min-height: 720px; /* provisional */
+    min-height: 72rem; /* provisional */
 
     &__header {
       // background-color: yellow;
@@ -173,13 +173,13 @@ body {
           position: absolute;
           font-size: 1.8rem;
           border-radius: 100%;
-          width: 25px;
-          height: 25px;
+          width: 2.5rem;
+          height: 2.5rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          top: -15px;
-          left: 20px;
+          top: -1.5rem;
+          left: 2rem;
           font-weight: 500;
         }
       }
@@ -202,7 +202,7 @@ body {
 
       .plato {
         // width: calc(100% - 3rem);
-        height: 150px;
+        height: 15rem;
         margin-left: 3rem;
         display: flex;
         border-radius: 2rem 0 0 2rem;
@@ -225,11 +225,11 @@ body {
 
         &__imagen {
           // background-color: gray;
-          width: 150px;
-          height: 150px;
-          max-width: 150px;
-          max-height: 150px;
-          transform: translate(-20px, -20px);
+          width: 15rem;
+          height: 15rem;
+          max-width: 15rem;
+          max-height: 15rem;
+          transform: translate(-2rem, -2rem);
           // background-image: url(../img/assets/platos/plate__bacon-eggs.png);
           background-size: contain;
           background-repeat: no-repeat;
@@ -242,7 +242,7 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
-          transform: translate(0, 25px);
+          transform: translate(0, 2.5rem);
           gap: 1rem;
           width: max-content;
           position: relative;
@@ -254,7 +254,7 @@ body {
           // background-color: green;
           font-size: 2rem;
           font-weight: 300;
-          line-height: 20px;
+          line-height: 2rem;
           text-transform: capitalize;
         }
 
@@ -340,7 +340,7 @@ body {
       display: flex;
       flex-direction: column;
       padding: 0 2.5rem;
-      transform: translateY(-35px);
+      transform: translateY(-3.5rem);
 
       .elemento {
         // background-color: rgb(186, 255, 255);
@@ -348,28 +348,28 @@ body {
         display: flex;
         justify-content: space-between;
         gap: 2rem;
-        border-bottom: 1.5px solid #d7d7f9;
+        border-bottom: 0.15rem solid #d7d7f9;
 
         padding: 3rem 0;
 
         &__imagen {
-          width: 80px;
-          height: 80px;
+          width: 8rem;
+          height: 8rem;
           // background-color: gray;
-          transform: translate(0, -10px);
+          transform: translate(0, -1rem);
           background-image: url(../img/assets/platos/plate__fish-sticks-fries.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          transform: translate(0px, -10px);
+          transform: translate(0rem, -1rem);
           display: flex;
           align-items: center;
           justify-content: center;
 
           &__numero {
             background-color: black;
-            width: 35px;
-            height: 35px;
+            width: 3.5rem;
+            height: 3.5rem;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -388,19 +388,19 @@ body {
           display: flex;
           flex-direction: column;
           gap: 1rem;
-          width: 250px;
+          width: 25rem;
 
           .elemento__header {
             // background-color: yellow;
             display: flex;
             flex-direction: column;
-            // border: 1px solid black;
+            // border: 0.1rem solid black;
 
             .nombre {
               // background-color: rgb(145, 145, 255);
               font-size: 2rem;
               font-weight: 300;
-              line-height: 20px;
+              line-height: 2rem;
               text-transform: capitalize;
             }
             .precio-unitario {
@@ -420,25 +420,25 @@ body {
             background-color: transparent;
             justify-content: space-between;
             // background-color: #00e1f5;
-            // border: 1px solid black;
+            // border: 0.1rem solid black;
 
             .main__nav {
               // background-color: rgb(238, 127, 255);
               display: flex;
               align-items: center;
               width: max-content;
-              width: 110px;
+              width: 11rem;
               justify-content: space-between;
 
               .boton {
-                width: 35px;
-                height: 35px;
+                width: 3.5rem;
+                height: 3.5rem;
                 border-radius: 50%;
                 border: none;
                 background-color: #6b00f5;
                 color: white;
                 background-image: url(../img/assets/icons/chevron.svg);
-                background-position: 10.5px;
+                background-position: 1.05rem;
                 background-repeat: no-repeat;
                 transition: 0.3s;
 
@@ -479,12 +479,12 @@ body {
         }
 
         &:last-child {
-          border-bottom: 5px solid #d7d7f9;
+          border-bottom: 0.5rem solid #d7d7f9;
         }
       }
     }
     .contenedor-resultados {
-      // border: 1px solid black;
+      // border: 0.1rem solid black;
       // background-color: rgb(255, 192, 255);
       width: 100%;
       padding: 0 2rem;
@@ -534,7 +534,7 @@ body {
     .aviso-carrito-vacio {
       // background-color: red;
       padding: 0 4.2rem;
-      transform: translateY(-9px);
+      transform: translateY(-0.9rem);
 
       // display: none; /* PROVISIONAL */
 
@@ -567,7 +567,7 @@ body {
   }
 }
 /* ///////////////////////////////////////////////////////////////// */
-@media (min-width: 430px) {
+@media (min-width: 43rem) {
   .contenedor-fondos {
     display: inherit;
   }
@@ -578,14 +578,14 @@ body {
 
   .seccion {
     border-radius: 2rem;
-    box-shadow: 0 0 20px 0px rgba(128, 128, 128, 0.2);
+    box-shadow: 0 0 2rem 0rem rgba(128, 128, 128, 0.2);
   }
   .footer {
     background-color: transparent;
   }
 }
 
-@media (min-width: 868px) {
+@media (min-width: 86.8rem) {
   .seccion {
     &__header {
       i {
