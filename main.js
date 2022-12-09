@@ -397,6 +397,6 @@ comprobarCarritoVacio()
 renderizarListaPlatos()
 
 window.addEventListener('load', () => {
-  console.log('se termino de cargar la pagina 2')
+  console.log('se termino de cargar la pagina 3')
   document.getElementById('body').classList.remove('hidden')
 })
