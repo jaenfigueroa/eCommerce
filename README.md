@@ -37,17 +37,6 @@ In this project, I have developed an e-commerce component.
 - Tax is based on the state of Tennessee sales tax: 0.0975
 - After the user refreshes the page, they should still have the dishes added to their cart.
 
-## 🚀 Challenge finished
-
-This challenge was developed with the following languages:
-
-<div align="left" >
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="70px" height="70px" /> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" width="80px" height="75px" /> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="65px" height="65px" />  &nbsp; &nbsp;
-
-</div>
-
 ## 🔠 Fonts
 
 Poppins - https://fonts.google.com/specimen/Poppins?query=poppins
@@ -60,6 +49,17 @@ Poppins - https://fonts.google.com/specimen/Poppins?query=poppins
 - White Ice: #defef0
 - background color: #EFF0F6
 - primary purple: #6B00F5
+
+## 🚀 Challenge finished
+
+This challenge was developed with the following languages:
+
+<div align="left" >
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="70px" height="70px" /> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" width="80px" height="75px" /> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="65px" height="65px" />  &nbsp; &nbsp;
+
+</div>
 
 ## 🌍 Website
 
