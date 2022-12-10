@@ -43,11 +43,23 @@ This challenge was developed with the following languages:
 
 <div align="left" >
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="70px" height="70px" /> 
-<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="70px" height="70px" />  &nbsp; -->
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" width="80px" height="75px" /> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="65px" height="65px" />  &nbsp; &nbsp;
 
 </div>
+
+# 🔠 Fonts
+
+Poppins - https://fonts.google.com/specimen/Poppins?query=poppins
+
+# 🎨 Colors
+
+- border color: #d7d6fc
+- Pattens Blue: #e1f0fe
+- Ghost White: #f7f7ff
+- White Ice: #defef0
+- background color: #EFF0F6
+- primary purple: #6B00F5
 
 ## 🌍 Website
 
