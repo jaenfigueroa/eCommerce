@@ -303,7 +303,7 @@ body {
   transform: scale(1.2) translateX(12px);
 }
 .main .seccion2 #boton-volver-menu:hover {
-  transform: scale(1.4) translateX(6px);
+  transform: scale(1.4) translateX(10px);
 }
 .main .seccion2 .contenedor-elementos {
   width: 100%;
@@ -334,7 +334,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  display: none;
   transition: 0.3s;
 }
 .main .seccion2 .contenedor-elementos .elemento .boton-eliminar:hover {

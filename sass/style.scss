@@ -338,7 +338,7 @@ body {
       // background-color: red;
       transform: scale(1.2) translateX(12px);
       &:hover {
-        transform: scale(1.4) translateX(6px);
+        transform: scale(1.4) translateX(10px);
       }
     }
     .contenedor-elementos {
@@ -374,7 +374,7 @@ body {
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          display: none;
+          // display: none;
           transition: 0.3s;
 
           &:hover {
