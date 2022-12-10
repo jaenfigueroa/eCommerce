@@ -300,10 +300,10 @@ body {
   display: none;
 }
 .main .seccion2 #boton-volver-menu {
-  transform: scale(1.2) translateX(12px);
+  transform: scale(1.2) translateX(14px);
 }
 .main .seccion2 #boton-volver-menu:hover {
-  transform: scale(1.4) translateX(10px);
+  transform: scale(1.4) translateX(12px);
 }
 .main .seccion2 .contenedor-elementos {
   width: 100%;
