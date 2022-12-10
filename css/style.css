@@ -532,9 +532,6 @@ body {
   .main .seccion2 i {
     display: none;
   }
-  .main .seccion2 .boton-eliminar {
-    display: none;
-  }
 }
 /* ////////////////// */
 .desactivado {
