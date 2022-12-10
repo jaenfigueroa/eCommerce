@@ -163,6 +163,8 @@ function crearElemento(id = 0, cantidad = 0) {
   clon.querySelector('.disminuir-cantidad').onclick = () => modificarCantidad(id, 'menos')
   clon.querySelector('.aumentar-cantidad').onclick = () => modificarCantidad(id, 'mas')
 
+  clon.querySelector('.boton-eliminar').onclick = () => quitarDelCarrito(id)
+
   fragmento.appendChild(clon)
   contenedor.append(fragmento)
 }

@@ -351,6 +351,29 @@ body {
         border-bottom: 0.15rem solid #d7d7f9;
 
         padding: 3rem 0;
+        position: relative;
+
+        &:hover .boton-eliminar {
+          display: initial;
+        }
+        .boton-eliminar {
+          // background-color: red;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 20px;
+          right: -4px;
+          background-image: url(../img/assets/icons/delete-black.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: none;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
 
         &__imagen {
           width: 8rem;

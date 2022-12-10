@@ -313,6 +313,26 @@ body {
   gap: 2rem;
   border-bottom: 0.15rem solid #d7d7f9;
   padding: 3rem 0;
+  position: relative;
+}
+.main .seccion2 .contenedor-elementos .elemento:hover .boton-eliminar {
+  display: initial;
+}
+.main .seccion2 .contenedor-elementos .elemento .boton-eliminar {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: -4px;
+  background-image: url(../img/assets/icons/delete-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  transition: 0.3s;
+}
+.main .seccion2 .contenedor-elementos .elemento .boton-eliminar:hover {
+  transform: scale(1.3);
 }
 .main .seccion2 .contenedor-elementos .elemento__imagen {
   width: 8rem;
