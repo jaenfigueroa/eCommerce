@@ -48,11 +48,11 @@ This challenge was developed with the following languages:
 
 </div>
 
-# 🔠 Fonts
+## 🔠 Fonts
 
 Poppins - https://fonts.google.com/specimen/Poppins?query=poppins
 
-# 🎨 Colors
+## 🎨 Colors
 
 - border color: #d7d6fc
 - Pattens Blue: #e1f0fe
