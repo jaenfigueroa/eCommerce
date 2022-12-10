@@ -39,7 +39,7 @@ In this project, I have developed an e-commerce component.
 
 ## 🔠 Fonts
 
-Poppins - https://fonts.google.com/specimen/Poppins?query=poppins
+- Poppins - https://fonts.google.com/specimen/Poppins?query=poppins
 
 ## 🎨 Colors
 
