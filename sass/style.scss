@@ -334,6 +334,13 @@ body {
     // background-color: blue;
     display: none;
 
+    #boton-volver-menu {
+      // background-color: red;
+      transform: scale(1.2) translateX(12px);
+      &:hover {
+        transform: scale(1.4) translateX(6px);
+      }
+    }
     .contenedor-elementos {
       // background-color: rgb(78, 207, 78);
       width: 100%;
@@ -358,8 +365,8 @@ body {
         }
         .boton-eliminar {
           // background-color: red;
-          width: 30px;
-          height: 30px;
+          width: 25px;
+          height: 25px;
           position: absolute;
           top: 20px;
           right: -4px;
