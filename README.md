@@ -18,11 +18,16 @@ In this project, I have developed an e-commerce component.
 
 - ### Desktop preview
 
-<img src="./img/preview1.gif" style="width: 100%"  />
+<!-- <img src="./img/preview1.gif" style="width: 100%"  /> -->
+<img src="./img/ecommerce-desktop-1.gif" style="width: 100%"  />
+
+
 
 - ### Mobile preview
 
-<img src="./img/preview2.gif" style="width: 70%"  />
+<!-- <img src="./img/preview2.gif" style="width: 70%"  /> -->
+<img src="./img/ecommerce-mobile-3.gif" style="width: 70%"  />
+
 
 ## 📌 Users should be able to:
 
